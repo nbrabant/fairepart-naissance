@@ -1,0 +1,1001 @@
+body {
+    background-color: #c7e1ff;
+    font-family: "Source Sans Pro",Arial,sans-serif;
+    font-size: 13px;
+}
+
+#header {
+	height: 800px;
+}
+
+#footer {
+	height: 800px;
+}
+
+
+
+
+
+
+
+
+
+#content-wrapper, #example-wrapper {
+    height: 100%;
+}
+.scrollContainer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+.scrollContainer {
+    height: 100%;
+    margin: auto;
+}
+#example-wrapper .scrollContent {
+    height: 100%;
+}
+.horizontal.scrollContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#example-wrapper.scrollContainer .scrollContent {
+    height: auto;
+    width: 100%;
+}
+#example-wrapper.scrollContainer.horizontal .scrollContent {
+    height: 100%;
+    width: auto;
+}
+#example-wrapper.horizontal {
+    font-size: 0;
+    white-space: nowrap;
+}
+#example-wrapper.horizontal div {
+    font-size: 13px;
+}
+#example-wrapper .scrollContent, #example-wrapper.horizontal .scrollContent {
+    font-size: 0;
+}
+#example-wrapper .scrollContent div {
+    font-size: 13px;
+}
+#example-wrapper section {
+}
+section#titlechart {
+    height: 100vh;
+    min-height: 500px;
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+}
+.horizontal section, .horizontal section#titlechart {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+section#titlechart #description {
+    height: 300px;
+    left: 50%;
+    margin: -150px auto auto -300px;
+    position: absolute;
+    top: 50%;
+    width: 600px;
+}
+section#titlechart.home #description {
+    padding-bottom: 100px;
+    padding-top: 0;
+}
+section#titlechart #description h1 {
+    margin: 0;
+}
+section#titlechart #description h2 {
+    margin-bottom: 20px;
+}
+section#titlechart #description a.viewsource {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+section#titlechart #description code {
+    background-color: #e1f1ff;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: nowrap;
+}
+section#titlechart #description ol, section#titlechart #description p {
+    margin: 10px auto;
+    max-width: 400px;
+    text-align: left;
+    white-space: normal;
+}
+section#titlechart #description ol {
+    list-style-position: outside;
+}
+#example-wrapper section#titlechart #description::after {
+    content: "↧";
+    display: block;
+    font-size: 40px;
+}
+#example-wrapper.horizontal section#titlechart #description::after {
+    content: "↦";
+}
+section.demo * {
+    font-size: 13px;
+}
+section.demo {
+    font-size: 0;
+    text-align: center;
+}
+section.demo.fullheight {
+    min-height: 100%;
+}
+section.demo.doublewidth, .spacer.doublewidth {
+    min-width: 200%;
+}
+.horizontal section.demo {
+    text-align: inherit;
+    white-space: nowrap;
+}
+.horizontal section.demo.fullwidth {
+    min-width: 100%;
+}
+h1.badge {
+    pointer-events: none;
+}
+h1.badge::after {
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Source Sans Pro",Arial,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 2px 5px;
+    pointer-events: all;
+    position: absolute;
+    vertical-align: text-top;
+}
+h1.badge.gsap::after {
+    background-color: #61ac27;
+    content: "GSAP";
+}
+h1.badge.velocity::after {
+    background-color: #f53a47;
+    content: "Velocity.js";
+}
+.spacer {
+    min-height: 100px;
+    text-align: center;
+}
+.spacer.s0 {
+    min-height: 1px;
+}
+.spacer.s1 {
+    min-height: 100px;
+}
+.spacer.s2 {
+    min-height: 200px;
+}
+.spacer.s3 {
+    min-height: 300px;
+}
+.spacer.s4 {
+    min-height: 400px;
+}
+.spacer.s5 {
+    min-height: 500px;
+}
+.spacer.s6 {
+    min-height: 600px;
+}
+.spacer.s7 {
+    min-height: 700px;
+}
+.spacer.s8 {
+    min-height: 800px;
+}
+.spacer.s9 {
+    min-height: 900px;
+}
+.spacer.s10 {
+    min-height: 1000px;
+}
+.spacer.s_viewport {
+    min-height: 100%;
+}
+.horizontal .spacer {
+    display: inline-block;
+    height: 100%;
+    margin-bottom: 0;
+    min-height: initial;
+    min-width: 100px;
+    vertical-align: top;
+}
+.horizontal .spacer.s0 {
+    min-width: 1px;
+}
+.horizontal .spacer.s1 {
+    min-width: 100px;
+}
+.horizontal .spacer.s2 {
+    min-width: 200px;
+}
+.horizontal .spacer.s3 {
+    min-width: 300px;
+}
+.horizontal .spacer.s4 {
+    min-width: 400px;
+}
+.horizontal .spacer.s5 {
+    min-width: 500px;
+}
+.horizontal .spacer.s6 {
+    min-width: 600px;
+}
+.horizontal .spacer.s7 {
+    min-width: 700px;
+}
+.horizontal .spacer.s8 {
+    min-width: 800px;
+}
+.horizontal .spacer.s9 {
+    min-width: 900px;
+}
+.horizontal .spacer.s10 {
+    min-width: 1000px;
+}
+.spacer.s_viewport {
+    min-width: 100%;
+}
+.box1, .box2, .box3 {
+    border: 0 solid white;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+.box1 {
+    height: 100px;
+    margin: 0 auto;
+    min-width: 100px;
+}
+.box2 {
+    height: 50px;
+    margin: 25px auto;
+    min-width: 50px;
+}
+.box3 {
+    height: 26px;
+    margin: 37px auto;
+    min-width: 26px;
+}
+.horizontal .box1 {
+    margin: -50px 0 auto;
+    max-height: 100px;
+    top: 50%;
+}
+.horizontal .box2 {
+    margin: -25px 25px auto;
+    max-height: 50px;
+    top: 50%;
+}
+.horizontal .box3 {
+    margin: -13px 37px auto;
+    max-height: 26px;
+    top: 50%;
+}
+.box1 p, .box2 p, .box3 p {
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    margin: 5px 15px;
+}
+.box1 p:first-child {
+    margin-top: 27px;
+}
+.box1 a, .box2 a, .box3 a {
+    color: white;
+}
+.box1.white *, .box2.white *, .box3.white * {
+    color: #2e639e;
+}
+.box2.mario {
+    background-color: #004fae;
+    border-bottom: 10px solid #c4723b;
+    border-top: 30px solid #fc112f;
+}
+.box3.goomba {
+    background-color: #b39475;
+    border-bottom: 6px solid #c4723b;
+    border-top: 30px solid #744527;
+    height: 4px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-top: 75px;
+    min-width: 30px;
+}
+.box1.outline, .box2.outline, .box3.outline {
+    border: 1px solid white;
+}
+.blue {
+    background-color: #3883d8;
+}
+.turqoise {
+    background-color: #38ced7;
+}
+.brown {
+    background-color: #a66f28;
+}
+.bordeaux {
+    background-color: #953543;
+}
+.skin {
+    background-color: #ed9f4c;
+}
+.black {
+    background-color: #000000;
+}
+.white {
+    background-color: #ffffff;
+}
+.red {
+    background-color: #cf3535;
+}
+.green {
+    background-color: #22d659;
+}
+.orange {
+    background-color: #ea6300;
+}
+form.move {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    display: block;
+    left: 20px;
+    padding: 20px;
+    position: fixed;
+    text-align: left;
+    top: 70px;
+    z-index: 20;
+}
+html.touch form.move {
+    top: 120px;
+}
+form > div, form > fieldset > div {
+    display: block;
+    margin: 10px 0;
+}
+form .slider {
+    border-left: 1px solid #2e639e;
+    border-right: 1px solid #2e639e;
+    display: inline-block;
+    height: 9px;
+    margin-right: 5px;
+    min-width: 199px;
+    position: relative;
+    vertical-align: middle;
+}
+form .slider .trackbar {
+    border-top: 1px solid #2e639e;
+    height: 4px;
+    margin-top: 4px;
+}
+form .slider .handle {
+    background-color: white;
+    border: 1px solid #2e639e;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 14px;
+    left: 0;
+    margin-left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 6px;
+}
+form .slider .handle:hover, form .slider.dragging .handle {
+    background-color: #79b0ee;
+}
+form .slider + input {
+    background-color: transparent;
+    border: medium none;
+    padding: 0;
+}
+form #options label, form #actions label, form #tweenparams label {
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 90px;
+    text-align: right;
+}
+form #tweenparams label {
+    min-width: 50px;
+}
+form #options button {
+    width: 65px;
+}
+form fieldset {
+    margin: 5px 0 0;
+    padding: 0 10px;
+}
+form fieldset:first-child {
+    margin-top: -5px;
+}
+form fieldset legend {
+    margin: 0;
+    padding: 0 5px;
+}
+.move {
+    cursor: move;
+}
+.move * {
+    cursor: auto;
+}
+.move label {
+    cursor: default;
+}
+ul#menu, ul#menu ul {
+    list-style: outside none none;
+    padding: 0;
+}
+ul#menu {
+    left: 50%;
+    margin: 10px auto auto -270px;
+    position: fixed;
+    text-align: center;
+    width: 540px;
+    z-index: 999;
+}
+ul#menu > li {
+    background-color: #79b0ee;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 5px;
+    min-height: 30px;
+    min-width: 165px;
+    position: relative;
+    vertical-align: top;
+}
+ul#menu li a {
+    color: white;
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    padding: 0 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul#menu ul {
+    display: none;
+}
+ul#menu li:hover > a, ul#menu li.current > a {
+    color: #2e639e;
+}
+ul#menu li:hover ul, html.touch ul#menu li.open ul {
+    border-top: 1px dashed white;
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+}
+ul#menu ul li a {
+    color: #133f71;
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 20px;
+    text-transform: none;
+}
+ul#menu ul li.current a {
+    background-color: #ffffff;
+}
+ul#menu ul li a:hover {
+    background-color: #3883d8;
+    color: white;
+}
+.menuwrap {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    left: 50%;
+    margin-left: -270px;
+    min-height: 51px;
+    min-width: 540px;
+    position: fixed;
+    text-align: center;
+    transition: top 0.5s ease 1s;
+    z-index: 99999;
+}
+#titlechart .menuwrap {
+    background-color: transparent;
+    position: absolute;
+    z-index: inherit;
+}
+.menuwrap ul#menu {
+    position: absolute;
+}
+.menuwrap > a.prev, .menuwrap > a.next {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 280px;
+    position: absolute;
+    top: 11px;
+    width: 30px;
+}
+.menuwrap > a.prev:hover, .menuwrap > a.next:hover {
+    background-color: #79b0ee;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menuwrap > a.prev {
+    margin-left: 0;
+    padding-right: 2px;
+    right: 50%;
+}
+.menuwrap > a.next {
+    left: 50%;
+    margin-right: 0;
+    padding-left: 4px;
+}
+html.touch .menuwrap {
+    background-color: transparent;
+    box-sizing: content-box;
+    height: auto;
+    left: 0;
+    margin: 0;
+    min-width: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+html.touch ul#menu {
+    display: none;
+    left: 0;
+    margin: 100px 0 0;
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+html.touch .menuwrap.open {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    overflow: scroll;
+}
+html.touch .menuwrap.open ul#menu {
+    display: block;
+}
+html.touch ul#menu > li {
+    display: block;
+    height: auto;
+    margin: 10px;
+}
+html.touch ul#menu ul {
+    border-top: 1px dashed white;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+html.touch ul#menu li {
+    padding: 10px 0;
+}
+html.touch ul#menu li ul li {
+}
+html.touch ul#menu > li a {
+    color: #2e639e;
+    font-size: 4em;
+    line-height: 1.2em;
+}
+html.touch ul#menu ul li a {
+    font-size: 2.5em;
+    line-height: 1.2em;
+}
+html.touch ul#menu ul li a {
+}
+html.touch ul#menu ul {
+    display: block;
+}
+html.touch ul#menu ul li.current a {
+    background-color: transparent;
+}
+html.touch ul#menu ul li a:hover {
+    background-color: transparent;
+}
+html.touch ul#menu ul li a:active {
+    color: white;
+}
+html.touch .menuwrap > a.prev, html.touch .menuwrap > a.next, html.touch .menubtn {
+    background-color: #3883d8;
+    border-radius: 40px;
+    color: white;
+    font-size: 4em;
+    height: 80px;
+    line-height: 1.5em;
+    top: 10px;
+    width: 80px;
+}
+html.touch .menuwrap > a.prev:active, html.touch .menuwrap > a.next:active, html.touch .menubtn:active {
+    background-color: white;
+    border: 2px solid #3883d8;
+    color: #3883d8;
+}
+html.touch .menuwrap > a.prev {
+    margin-right: 70px;
+    padding-right: 10px;
+}
+html.touch .menuwrap > a.next {
+    margin-left: 70px;
+    padding-left: 10px;
+}
+html.touch .menubtn {
+    -moz-user-select: none;
+    align-items: center;
+    border: 0 none;
+    justify-content: center;
+    left: 50%;
+    line-height: 0;
+    margin-left: -40px;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+}
+html.touch .menubtn:active .button-lines, html.touch .menubtn:active .button-lines::before, html.touch .menubtn:active .button-lines::after {
+    background: #3883d8 none repeat scroll 0 0;
+}
+html.touch .menubtn .button-lines, html.touch .menubtn .button-lines::before, html.touch .menubtn .button-lines::after {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 4px;
+    display: inline-block;
+    height: 6px;
+    left: 0;
+    position: relative;
+    top: -5px;
+    transition: all 0.3s ease 0s;
+    width: 35px;
+}
+html.touch .menubtn .button-lines::before, html.touch .menubtn .button-lines::after {
+    content: "";
+    position: absolute;
+}
+html.touch .menubtn .button-lines::before {
+    top: 12px;
+}
+html.touch .menubtn .button-lines::after {
+    top: -12px;
+}
+html.touch .menuwrap.open .menubtn .button-lines {
+    background: transparent none repeat scroll 0 0;
+}
+html.touch .menuwrap.open .menubtn .button-lines::before {
+    top: 0;
+    transform: rotate3d(0, 0, 1, -45deg);
+    transform-origin: 50% 50% 0;
+}
+html.touch .menuwrap.open .menubtn .button-lines::after {
+    top: 0;
+    transform: rotate3d(0, 0, 1, 45deg);
+    transform-origin: 50% 50% 0;
+}
+#codecontainer {
+    background-color: white;
+    border-radius: 4px;
+    bottom: 20px;
+    left: 20px;
+    min-height: 300px;
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    z-index: 99999;
+}
+#codecontainer pre {
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+#codecontainer pre .break {
+    background-color: #f6f6f6;
+    color: #aaa;
+    font-weight: bold;
+}
+#codecontainer pre .break::before {
+    content: "᎒";
+}
+#codecontainer .codewrap {
+    bottom: 10px;
+    overflow: scroll;
+    position: absolute;
+    top: 10px;
+    white-space: nowrap;
+    width: 100%;
+}
+#codecontainer .code, #codecontainer .linenumbers {
+    min-height: 100%;
+}
+#codecontainer .code {
+    display: inline-block;
+    padding: 0;
+}
+#codecontainer .code {
+    padding: 0 15px 10px 5px;
+}
+#codecontainer .linenumbers {
+    border-right: 1px solid #e5e5e5;
+    color: #aaa;
+    float: left;
+    padding: 0 5px 0 10px;
+    text-align: right;
+}
+#codecontainer span.indent {
+    display: inline-block;
+    white-space: nowrap;
+    width: 31px;
+}
+#codecontainer #close.button {
+    height: 20px;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    width: 20px;
+}
+#codecontainer #select.button {
+    height: 20px;
+    padding: 0 10px;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+}
+#codecontainer #close.button::after {
+    content: "྾";
+}
+#codecontainer .button {
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    color: #2e639e;
+    cursor: pointer;
+    text-align: center;
+}
+#codecontainer .button:hover {
+    background-color: #3883d8;
+    color: white;
+}
+a.viewsource::after {
+    content: " }";
+}
+a.viewsource::before {
+    content: "{ ";
+}
+#parallaxContainer {
+    height: 500px;
+    position: relative;
+    top: 30px;
+    width: 900px;
+}
+#parallaxContainer .layer1 {
+    height: 100%;
+    text-align: center;
+}
+#parallaxContainer .layer2 {
+    bottom: 32px;
+    height: 139px;
+    position: absolute;
+    width: 100%;
+}
+#parallaxContainer .layer3 {
+    bottom: 0;
+    height: 32px;
+    position: absolute;
+    width: 100%;
+}
+#parallaxText {
+    height: 100%;
+    margin: auto;
+    position: relative;
+    width: 0;
+}
+#parallaxText .layer1, #parallaxText .layer2, #parallaxText .layer3 {
+    color: #133f71;
+    font-size: 50px;
+    left: 50%;
+    line-height: 50px;
+    margin-left: -150px;
+    margin-top: -25px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 300px;
+}
+#parallaxText .layer1 {
+    top: 48%;
+}
+#parallaxText .layer2 {
+    top: 49%;
+}
+#parallaxText .layer3 a {
+    display: block;
+    font-family: "Source Sans Pro",Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+#parallax1 > div, #parallax2 > div, #parallax3 > div {
+    backface-visibility: hidden;
+    transform: translateZ(0px);
+}
+.dynamicContent #content {
+    margin: auto;
+    text-align: left;
+    width: 390px;
+}
+.dynamicContent #content .box1 {
+    margin: 10px;
+}
+.dynamicContent #loader {
+    height: 0;
+    line-height: 60px;
+    overflow: hidden;
+}
+.dynamicContent #loader.active {
+    height: 60px;
+}
+.dynamicContent #loader img {
+    vertical-align: text-bottom;
+}
+#customactions {
+    height: 160px;
+    margin: auto;
+    padding-top: 40px;
+    text-align: left;
+    width: 170px;
+}
+#customactions label {
+    display: inline-block;
+    width: 100px;
+}
+#customactions code {
+    color: #3883d8;
+}
+#customactions a.viewsource {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+.demo.responsiveDuration {
+    position: relative;
+}
+.responsiveDuration .box1 {
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+}
+#destroybox a {
+    display: block;
+    margin-top: 20px;
+}
+#destroybox a.disabled {
+    color: #79b0ee;
+}
+#mobileadvanced {
+    height: 150px;
+    width: 150px;
+}
+#mobileadvanced p {
+    margin-top: 50px;
+}
+#multiDirect {
+    position: relative;
+    text-align: left;
+}
+#multiDirect .box1 {
+    left: 50vw;
+    margin-left: -60px;
+    top: 200px;
+}
+#multiDirect .box1 p:first-child {
+    margin-top: 20px;
+}
+#imagesequence {
+    height: 300px;
+}
+.copyright {
+    font-size: 11px;
+}
+#bezier {
+    overflow: hidden;
+    position: relative;
+}
+#bezier #plane {
+    left: -100px;
+    position: absolute;
+}
+#bezier a.viewsource {
+    display: inline-block;
+    margin: 100px;
+}
+#section-slides.demo, #section-wipes.demo {
+    background-image: none;
+    height: 100%;
+    width: 100%;
+}
+#section-slides.demo .panel, #section-wipes.demo .panel {
+}
+
+#section-wipes.demo #pinContainer .turqoise, #section-wipes.demo #pinContainer .green, #section-slides.demo #slideContainer .panel {
+}
+
+#section-slides.demo .panel > b, #section-wipes.demo .panel > b {
+    color: white;
+    display: block;
+    font-size: 15px;
+    height: 0;
+    overflow: visible;
+    position: relative;
+    top: 50%;
+}
+.hljs {
+    color: #333;
+    display: block;
+    padding: 0.5em;
+}
+.hljs-comment, .hljs-template_comment, .diff .hljs-header, .hljs-javadoc {
+    color: #998;
+    font-style: italic;
+}
+.hljs-keyword, .css .rule .hljs-keyword, .hljs-winutils, .javascript .hljs-title, .nginx .hljs-title, .hljs-subst, .hljs-request, .hljs-status {
+    color: #333;
+    font-weight: bold;
+}
+.hljs-number, .hljs-hexcolor, .ruby .hljs-constant {
+    color: #099;
+}
+.hljs-string, .hljs-tag .hljs-value, .hljs-phpdoc, .tex .hljs-formula {
+    color: #d14;
+}
+.hljs-title, .hljs-id, .coffeescript .hljs-params, .scss .hljs-preprocessor {
+    color: #900;
+    font-weight: bold;
+}
+.javascript .hljs-title, .lisp .hljs-title, .clojure .hljs-title, .hljs-subst {
+    font-weight: normal;
+}
+.hljs-class .hljs-title, .haskell .hljs-type, .vhdl .hljs-literal, .tex .hljs-command {
+    color: #458;
+    font-weight: bold;
+}
+.hljs-tag, .hljs-tag .hljs-title, .hljs-rules .hljs-property, .django .hljs-tag .hljs-keyword {
+    color: #000080;
+    font-weight: normal;
+}
+.hljs-attribute, .hljs-variable, .lisp .hljs-body {
+    color: #008080;
+}
+.hljs-regexp {
+    color: #009926;
+}
+.hljs-symbol, .ruby .hljs-symbol .hljs-string, .lisp .hljs-keyword, .tex .hljs-special, .hljs-prompt {
+    color: #990073;
+}
+.hljs-built_in, .lisp .hljs-title, .clojure .hljs-built_in {
+    color: #0086b3;
+}
+.hljs-preprocessor, .hljs-pragma, .hljs-pi, .hljs-doctype, .hljs-shebang, .hljs-cdata {
+    color: #999;
+    font-weight: bold;
+}
+.hljs-deletion {
+    background: #fdd none repeat scroll 0 0;
+}
+.hljs-addition {
+    background: #dfd none repeat scroll 0 0;
+}
+.diff .hljs-change {
+    background: #0086b3 none repeat scroll 0 0;
+}
+.hljs-chunk {
+    color: #aaa;
+}
