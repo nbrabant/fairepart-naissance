@@ -11,6 +11,9 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
+$app->get('login', 'Controller@getLogin');
+$app->group(['middleware' => 'auth'], function ($app) {
+
 });
+
+$app->get('/', 'Controller@getIndex');
