@@ -1,8 +1,143 @@
 body {
-    background-color: #c7e1ff;
     font-family: "Source Sans Pro",Arial,sans-serif;
     font-size: 13px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    background: #000;
 }
+
+#wrapper {
+    position: relative;
+    top: 0;
+    transition: top 1.4s cubic-bezier(.49, .22, .52, 1.35);
+    -webkit-transition: top 1.4s cubic-bezier(.49, .22, .52, 1.35);
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 0;
+    text-align: right;
+    background: transparent; 
+}
+
+#nav li {
+    display: block;
+    margin: 0;
+}
+
+#nav a {
+    display: inline-block;
+    margin: 0 3em;
+    color: #eee;
+    text-shadow: 0 0 5px #fff;
+    transition: all 1s;
+}
+
+#slide1,
+#slide2,
+#slide3 {
+    height: 1000px;
+    padding-top: 100px;
+    transition: background-position 1.4s cubic-bezier(.49,.22,.52,1.35);
+    -webkit-transition: background-position 1.4s cubic-bezier(.49,.22,.52,1.35);
+}
+
+#slide1 {
+    background: url(../img/strawberry.svg) center 0 no-repeat fixed;
+}
+#slide2 {
+    background: url(../img/bg_500.png) center 0 no-repeat fixed;
+}
+#slide3 {
+    background: url(../img/mobile.jpg) center 0 no-repeat fixed;
+}
+
+.slide_inside {
+    width: 770px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(0,0,0,.6);
+    padding: 50px;
+}
+
+#slide1 .slide_inside {
+    text-align: center;
+    background-color: transparent;
+}
+#slide2 .slide_inside p {
+    width: 500px;
+    text-align: justify;
+}
+#slide3 .slide_inside {
+    margin-top: 50px;
+}
+
+#trooper, 
+#clone {
+    position: absolute;
+    left: -180px;
+    top: 300px;
+    transform: rotate(10deg);
+    transition: all 1.4s cubic-bezier(.49,.22,.52,1);
+    -webkit-transition: all 1.4s cubic-bezier(.49,.22,.52,1);
+}
+
+#clone {
+    left: -280px;
+    top: 400px;
+}
+
+/* targetting */
+#s2:target ~ #wrapper {
+    top: -1000px;
+}
+
+#s2:target ~ #wrapper #slide1 {
+    background-position: 50% 36%;
+}
+
+#s2:target ~ #wrapper #slide2 {
+    background-position: 50% 0%;
+}
+
+#s2:target ~ #wrapper #slide3 {
+    background-position: 50% -30%;
+}
+
+#s2:target ~ #wrapper #tropper {
+    left: -180px;
+    top: -100px;
+    transform: rotate(-7deg);
+}
+
+#s2:target ~ #wrapper #clone {
+    left: -350px;
+    top: 50px;
+    transform: rotate(0deg);
+}
+
+#s2:target ~ #wrapper #nav li:first-child + li a {
+    text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #header {
 	height: 800px;

@@ -2,13 +2,44 @@
 
 @section('content')
 
-	<div class="scrollContent">
+	<span id="s1"></span>
+	<span id="s2"></span>
+	<span id="s3"></span>
+
+	<div id="wrapper">
+		<ul id="nav">
+			<li><a href="#1">Slaph</a></li>
+			<li><a href="#2">Zipp</a></li>
+			<li><a href="#3">Boom</a></li>
+		</ul>
+
+		<div id="slide1">
+			<div class="slide_inside">
+				<h1>TEST</h1>
+				<img src="img/strawberry.svg" height="100px" />
+			</div>
+		</div>
+
+		<div id="slide2">
+			<div class="slide_inside">
+				<img id="trooper" src="img/strawberry.svg" height="100px" />
+				<h2>PARALLAX</h2>
+			</div>
+		</div>
+
+		<div id="slide3">
+			<div class="slide_inside">
+				<h2>Ending</h2>
+			</div>
+		</div>
+	</div>
+
+<!-- 	<div class="scrollContent">
 
 		<script>
 			// init controller
 			var controller = new ScrollMagic.Controller();
 		</script>
-
 
 		<section id="header">
 
@@ -37,6 +68,6 @@
 
 		</section>
 
-	</div>
+	</div> -->
 
 @endsection
