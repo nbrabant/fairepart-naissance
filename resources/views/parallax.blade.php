@@ -2,72 +2,53 @@
 
 @section('content')
 
-	<span id="s1"></span>
-	<span id="s2"></span>
-	<span id="s3"></span>
+	<!-- <ul id="nav">
+		<li><a href="#1">Slaph</a></li>
+		<li><a href="#2">Zipp</a></li>
+		<li><a href="#3">Boom</a></li>
+	</ul> -->
 
 	<div id="wrapper">
-		<ul id="nav">
-			<li><a href="#1">Slaph</a></li>
-			<li><a href="#2">Zipp</a></li>
-			<li><a href="#3">Boom</a></li>
-		</ul>
 
-		<div id="slide1">
-			<div class="slide_inside">
-				<h1>TEST</h1>
-				<img src="img/strawberry.svg" height="100px" />
-			</div>
-		</div>
+		<div id="content">
+			<div class="play" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"> Cliquez pour lancer l'animation</div>
+			<div class="scroll" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"> Ou scrollez pour continuer</div>
+			<div class="swipe" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"> Glissez pour continuer</div>
 
-		<div id="slide2">
-			<div class="slide_inside">
-				<img id="trooper" src="img/strawberry.svg" height="100px" />
-				<h2>PARALLAX</h2>
-			</div>
-		</div>
+			<svg class="particles" height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" data-0=" display:block; opacity:0.5;" data-1200="display:block; opacity:0.5;" data-2500=" display:block; opacity:0;">
+			<?php
+				for( $i=0; $i<200; $i++) {
+					echo '<circle data-0="@cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" data-1200=" @cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" data-2400=" @cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" r="3" fill="white" />';
+				}
+			?>
+			</svg>
+			<svg class="particles" height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" data-0=" display:block; opacity:0.5;" data-1200="display:block; opacity:0.5;" data-2500=" display:block; opacity:0;">
+			<?php
+				for( $i=0; $i<500; $i++) {
+					echo '<circle data-0="@cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" data-1200=" @cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" data-2400=" @cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" r="2" fill="white" />';
+				}
+			?>
+			</svg>
+			<svg class="particles" height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" data-0=" display:block; opacity:0.5;" data-1200="display:block; opacity:0.5;" data-2500=" display:block; opacity:0;">
+			<?php
+				for( $i=0; $i<1000; $i++) {
+					echo '<circle data-0="@cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" data-1200=" @cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" data-2400=" @cx:'.rand(20,1500).'; @cy:'.rand(-900,900).';" r="1" fill="white" />';
+				}
+			?>
+			</svg>
 
-		<div id="slide3">
-			<div class="slide_inside">
-				<h2>Ending</h2>
-			</div>
+			<!-- BG -->
+			<div style="background-color:#000020;width:100%;height:200%;position:fixed;" data-0="display:none;opacity:0;" data-1200="display:block;top:0%;" data-2400="opacity:1;" data-4000="opacity:1;" data-5000="opacity:0;" data-5500="display:none;"></div>
+			<div style="background-color:#004080;width:100%;height:200%;position:fixed;" data-0="display:none;top:100%;opacity:0;" data-2400="display:block;top:0%;" data-3600="opacity:1;" data-8000="opacity:1;" data-8500="opacity:0;" data-9500="display:none;"></div>
+			<div style="background-color:#77b5fe;width:100%;height:200%;position:fixed;" data-0="display:none;top:100%;opacity:0;" data-6000="display:block;top:0%;" data-7500="opacity:1;" data-21000="top:-100%;" data-28750="display:none;"></div>
+
+			<!-- Sections -->
+			<section id="slide1" data-1000="opacity:0;top:0%;" data-1500="opacity:1;top:36.4%;" data-11000="opacity:1;top:36.4%;" data-12000="opacity:0;top:36.4%;" data-15499="opacity:0;top:36.4%;display:block;" data-15500="display:none;">
+				<p style="color:white">Test</p>
+			</section>
+
 		</div>
+		
 	</div>
-
-<!-- 	<div class="scrollContent">
-
-		<script>
-			// init controller
-			var controller = new ScrollMagic.Controller();
-		</script>
-
-		<section id="header">
-
-		</section>
-
-		<section id="step_1" class="demo">
-			<div class="spacer s2"></div>
-			<div id="trigger1" class="spacer s0"></div>
-			<div id="animate1" class="box2 skin" style="background-color: green; transform: matrix(2.5, 0, 0, 2.5, 0, 0);">
-				<p>You wouldn't like me, when I'm angry!</p>
-				<a href="#" class="viewsource">view source</a>
-			</div>
-			<div class="spacer s2"></div>
-			<script>
-				// build scene
-				var scene = new ScrollMagic.Scene({
-					triggerElement: "#trigger1"
-				})
-				.setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-				.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-				.addTo(controller);
-			</script>
-		</section>
-
-		<section id="footer">
-
-		</section>
-
-	</div> -->
 
 @endsection

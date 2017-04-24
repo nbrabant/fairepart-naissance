@@ -10,20 +10,34 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel='stylesheet' type='text/css' href="/css/bootstrap.min.css">
 		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'>
+		<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+		<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
         <link rel='stylesheet' type='text/css' href="/css/app.css">
 
-		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
-		<script type="text/javascript" src="js/lib/highlight.pack.js"></script>
-		<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
-        <script type="text/javascript" src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+		<script src="js/jquery-2.1.1.js" type="text/javascript" ></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" ></script>
     </head>
-    <body>
+    <body data-0="background-color:black;" data-12500="background-color:black;">
 
-        <div class='content'>
+        <div id="content">
             @yield('content')
         </div>
 
+		<script charset="utf-8" src="js/d3.min.js" type="text/javascript"></script>
+		<script src="js/modernizr.custom.83387.js" type="text/javascript" ></script>
+		<script src="js/pace.min.js" type="text/javascript" ></script>
+		<script src="js/compteur.min.js" type="text/javascript" ></script>
+		<script src="js/anim.js" type="text/javascript" ></script>
+		<script src="js/skrollr.js" type="text/javascript" ></script>
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/skrollr.ie.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			var s = skrollr.init();
+		</script>
+
     </body>
+
 </html>
