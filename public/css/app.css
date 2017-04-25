@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
 
-.play		{position: fixed; left: 10%; top: 3%; display: block; width: 400px; height: 40px; background: url("../img/play.png") no-repeat scroll left center / auto 100% rgba(0, 0, 0, 0); cursor: pointer; z-index:1000; text-align: right; color: #ffffff; font-size: 26px;}
+.play	    	{position: fixed; left: 10%; top: 3%; display: block; width: 400px; height: 40px; cursor: pointer; z-index:1000; text-align: right; color: #ffffff; font-size: 26px;}
 .scroll     {position: fixed; right: 10%; top: 3%; display: block; width: 340px; height: 40px; background: url("../img/mouse.png") no-repeat scroll right center / auto 100% rgba(0, 0, 0, 0);  cursor: pointer; z-index:1000;  text-align: left; color: #ffffff; font-size: 26px;}
 .swipe      {position: fixed; left: 38%; bottom: 15%; display: none; width: 300px; height: 40px; background: url("../img/swipe.png") no-repeat scroll right center / auto 100% rgba(0, 0, 0, 0);  cursor: pointer; z-index:1000;  text-align: left; color: #ffffff; font-size: 26px;}
 
@@ -76,10 +76,20 @@ body.pace-done #content {
 	position:fixed;
 }
 
-/*
-#slide1 {height: 100%; position: relative; width: 100%; position: fixed; color: white;}
-#slide2 {height: 100%; position: relative; width: 100%; position: fixed; color: white; text-align:center; z-index:1000;}
-*/
+.strawberry {
+  background: url("../img/strawberry.svg") no-repeat scroll right center / auto 100% rgba(0, 0, 0, 0);
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*#slide1 {height: 100%; width: 100%; color: white;}*/
+/*#slide2 {height: 100%; position: relative; width: 100%; position: fixed; color: white; text-align:center; z-index:1000;}*/
+
 
 
 /* Menu position */
