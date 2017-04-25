@@ -38,9 +38,26 @@
 			</svg>
 
 			<!-- BG -->
-			<div style="background-color:#000020;width:100%;height:200%;position:fixed;" data-0="display:none;opacity:0;" data-1200="display:block;top:0%;" data-2400="opacity:1;" data-4000="opacity:1;" data-5000="opacity:0;" data-5500="display:none;"></div>
-			<div style="background-color:#004080;width:100%;height:200%;position:fixed;" data-0="display:none;top:100%;opacity:0;" data-2400="display:block;top:0%;" data-3600="opacity:1;" data-8000="opacity:1;" data-8500="opacity:0;" data-9500="display:none;"></div>
-			<div style="background-color:#77b5fe;width:100%;height:200%;position:fixed;" data-0="display:none;top:100%;opacity:0;" data-6000="display:block;top:0%;" data-7500="opacity:1;" data-21000="top:-100%;" data-28750="display:none;"></div>
+			<div class="background" style="background-color:#000020;" data-0="display:none;opacity:0;" data-1200="display:block;top:0%;" data-2400="opacity:1;" data-4000="opacity:1;" data-5000="opacity:0;" data-5500="display:none;"></div>
+			<div class="background" style="background-color:#004080;" data-0="display:none;top:100%;opacity:0;" data-2400="display:block;top:0%;" data-3600="opacity:1;" data-8000="opacity:1;" data-8500="opacity:0;" data-9500="display:none;"></div>
+			<div class="background" style="background-color:#77b5fe;" data-0="display:none;top:100%;opacity:0;" data-6000="display:block;top:0%;" data-7500="opacity:1;" data-21000="top:-100%;" data-28750="display:none;"></div>
+			<div class="background" id="gradientsky" data-0="display:none;top:100%;opacity:0;" data-6000="display:block;top:0%;" data-7500="opacity:1;" data-21000="top:-100%;" data-28750="display:none;"></div>
+
+			<!-- Scene -->
+			<div id="clouds_1" class="clouds" data-0="display:none;opacity:0;bottom:-50%" data-8000="display:block;opacity:0;" data-9000="bottom:0%;opacity:1;" data-10000="bottom:40%"></div>
+			<div id="clouds_2" class="clouds" data-0="display:none;opacity:0;bottom:-50%" data-8500="display:block;opacity:0;" data-9500="bottom:0%;opacity:1;" data-10500="bottom:15%"></div>
+
+			<div id="plains_1" class="plains" data-0="display:none;bottom:-50%" data-9000="display:block;" data-11500="bottom:0%;"></div>
+			<div id="plains_2" class="plains" data-0="display:none;bottom:-50%" data-10500="display:block;" data-12000="bottom:0%;"></div>
+			<div id="plains_3" class="plains" data-0="display:none;bottom:-50%" data-11000="display:block;" data-12500="bottom:0%;"></div>
+
+			<div id="trees_1" data-0="display:none;left:-50%" data-9000="display:block;" data-11500="bottom:0%;"></div>
+			<div id="trees_2" data-0="display:none;left:-50%" data-9000="display:block;" data-11500="bottom:0%;"></div>
+			<div id="trees_3" data-0="display:none;left:-50%" data-9000="display:block;" data-11500="bottom:0%;"></div>
+
+
+
+
 
 			<!-- Elements -->
 			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
@@ -50,13 +67,16 @@
 			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
 
 
+
+
+
 			<!-- Sections -->
 			<div id="slide1" data-0="opacity:0;top:0%;" data-1500="opacity:1;top:36.4%;" data-11000="opacity:1;top:36.4%;" data-12000="opacity:0;top:36.4%;" data-15499="opacity:0;top:36.4%;display:block;" data-15500="display:none;">
 				<p style="color:white">Test</p>
 			</div>
 
 		</div>
-		
+
 	</div>
 
 @endsection
