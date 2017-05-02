@@ -71,8 +71,41 @@
 
 
 			<!-- Sections -->
-			<div id="slide1" data-0="opacity:0;top:0%;" data-1500="opacity:1;top:36.4%;" data-11000="opacity:1;top:36.4%;" data-12000="opacity:0;top:36.4%;" data-15499="opacity:0;top:36.4%;display:block;" data-15500="display:none;">
-				<p style="color:white">Test</p>
+			<div class="countdown">
+				<span class="countdown-header">9</span>
+				<span class="countdown-content">mois d'impatience</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">8</span>
+				<span class="countdown-content">kilos de fraises</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">7</span>
+				<span class="countdown-content">siestes par semaines</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">6</span>
+				<span class="countdown-content">SMS par heure</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">5</span>
+				<span class="countdown-content">sens en effervescence</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">4</span>
+				<span class="countdown-content">prénoms en balance</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">3</span>
+				<span class="countdown-content">échographies</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">2</span>
+				<span class="countdown-content">litres par jour</span>
+			</div>
+			<div class="countdown">
+				<span class="countdown-header">1</span>
+				<span class="countdown-content">heureux événement</span>
 			</div>
 
 		</div>

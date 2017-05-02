@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
 
-.play	    	{position: fixed; left: 10%; top: 3%; display: block; width: 400px; height: 40px; cursor: pointer; z-index:1000; text-align: right; color: #ffffff; font-size: 26px;}
-.scroll     {position: fixed; right: 10%; top: 3%; display: block; width: 340px; height: 40px; background: url("../img/mouse.png") no-repeat scroll right center / auto 100% rgba(0, 0, 0, 0);  cursor: pointer; z-index:1000;  text-align: left; color: #ffffff; font-size: 26px;}
+.play	    {position: fixed; left: 5%; top: 3%; display: block; width: 33%; height: 40px; cursor: pointer; z-index:1000; text-align: right; color: #ffffff; font-size: 26px;}
+.scroll     {position: fixed; right: 5%; top: 3%; display: block; width: 33%; height: 40px; background: url("../img/mouse.png") no-repeat scroll right center / auto 100% rgba(0, 0, 0, 0);  cursor: pointer; z-index:1000;  text-align: left; color: #ffffff; font-size: 26px;}
 .swipe      {position: fixed; left: 38%; bottom: 15%; display: none; width: 300px; height: 40px; background: url("../img/swipe.png") no-repeat scroll right center / auto 100% rgba(0, 0, 0, 0);  cursor: pointer; z-index:1000;  text-align: left; color: #ffffff; font-size: 26px;}
 
 /* Style loader */
@@ -58,39 +58,48 @@
 }
 /* Fin style loader */
 
+
+
 body {
 	position:absolute;
 	font-family: 'Gudea', sans-serif;
 }
 
 body.pace-done #content {
-	display:block !important;
+    display:block !important;
 }
 
 #content {
-	display:none;
-	position: relative;
+    display:none;
+    position: relative;
+}
+
+
+
+/* begin background */
+.particles {
+	position:fixed;
 }
 
 .background {
-	position:fixed;
-	width:100%;
-	height:200%;
+    position:fixed;
+    width: 100%;
+    height: 200%;
 }
 
 #gradientsky {
-	background: #77b5fe; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); /*Safari 5.1-6*/
-	background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); /*Opera 11.1-12*/
-	background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); /*Fx 3.6-15*/
-	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /*Standard*/
+    background: #77b5fe; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); /*Fx 3.6-15*/
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /*Standard*/
 }
 
 .clouds,
 .plains {
-	position:fixed;
-	width: 100%;
-	height: 50%;
+    position:fixed;
+    width: 100%;
+    height: 50%;
 }
 
 #clouds_1 {background: url("../img/clouds_1.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);}
@@ -98,13 +107,43 @@ body.pace-done #content {
 #plains_1 {background: url("../img/plains_1.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);}
 #plains_2 {background: url("../img/plains_2.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);}
 #plains_3 {background: url("../img/plains_3.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);}
+/* end background */
 
 
 
-
-.particles {
-	position:fixed;
+/* begin slides */
+.countdown {
+    /*position:fixed;*/
+    width:100%;
+    height:200%;
+    color: #fff;
+    z-index: 100000;
 }
+
+.countdown-header {
+    /*position: relative;*/
+    display: block;
+    width: 100%;
+    margin-top: 15%;
+    font-size: 10rem;
+    text-align: center;
+}
+
+.countdown-content {
+    /*position: relative;*/
+    display: block;
+    width: 100%;
+    font-size: 7rem;
+    text-align: center;
+
+}
+
+
+/* begin slides */
+
+
+
+
 
 .strawberry {
   background: url("../img/strawberry.svg") no-repeat scroll right center / auto 100% rgba(0, 0, 0, 0);
@@ -116,9 +155,6 @@ body.pace-done #content {
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-/*#slide1 {height: 100%; width: 100%; color: white;}*/
-/*#slide2 {height: 100%; position: relative; width: 100%; position: fixed; color: white; text-align:center; z-index:1000;}*/
 
 
 
