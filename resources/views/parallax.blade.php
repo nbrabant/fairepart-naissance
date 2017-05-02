@@ -71,41 +71,44 @@
 
 
 			<!-- Sections -->
-			<div class="countdown">
-				<span class="countdown-header">9</span>
-				<span class="countdown-content">mois d'impatience</span>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-100="display:block;" data-400="opacity:1;" data-500="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-100="opacity:0;" data-200="opacity:1;">9</span>
+				<span class="countdown-content" data-0="opacity:0;" data-200="opacity:0;" data-300="opacity:1;">mois d'impatience</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-800="display:block;" data-1100="opacity:1;" data-1200="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-800="opacity:0;" data-900="opacity:1;">8</span>
+				<span class="countdown-content" data-0="opacity:0;" data-900="opacity:0;" data-1000="opacity:1;">kilos de fraises</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-1500="display:block;" data-1800="opacity:1;" data-1900="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-1500="opacity:0;" data-1600="opacity:1;">7</span>
+				<span class="countdown-content" data-0="opacity:0;" data-1600="opacity:0;" data-1700="opacity:1;">siestes par semaines</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-2200="display:block;" data-2500="opacity:1;" data-2600="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-2200="opacity:0;" data-2300="opacity:1;">6</span>
+				<span class="countdown-content" data-0="opacity:0;" data-2300="opacity:0;" data-2400="opacity:1;">SMS par heure</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-2900="display:block;" data-3200="opacity:1;" data-3300="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-3000="opacity:0;" data-3100="opacity:1;">5</span>
+				<span class="countdown-content" data-0="opacity:0;" data-3100="opacity:0;" data-3200="opacity:1;">sens en effervescence</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-3600="display:block;" data-3900="opacity:1;" data-4000="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-3600="opacity:0;" data-3700="opacity:1;">4</span>
+				<span class="countdown-content" data-0="opacity:0;" data-3700="opacity:0;" data-3800="opacity:1;">prénoms en balance</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-4300="display:block;" data-4600="opacity:1;" data-4700="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-4300="opacity:0;" data-4400="opacity:1;">3</span>
+				<span class="countdown-content" data-0="opacity:0;" data-4400="opacity:0;" data-4500="opacity:1;">échographies</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-5000="display:block;" data-5300="opacity:1;" data-5400="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-5100="opacity:0;" data-5200="opacity:1;">2</span>
+				<span class="countdown-content" data-0="opacity:0;" data-5200="opacity:0;" data-5300="opacity:1;">litres par jour</span>
+			</div>
+			<div class="countdown" style="position:fixed;" data-0="display:none;" data-5700="display:block;" data-6000="opacity:1;" data-6100="opacity:0;">
+				<span class="countdown-header" data-0="opacity:0;" data-5700="opacity:0;" data-5800="opacity:1;">1</span>
+				<span class="countdown-content" data-0="opacity:0;" data-5800="opacity:0;" data-5900="opacity:1;">heureux événement</span>
 			</div>
 			<div class="countdown">
-				<span class="countdown-header">8</span>
-				<span class="countdown-content">kilos de fraises</span>
-			</div>
-			<div class="countdown">
-				<span class="countdown-header">7</span>
-				<span class="countdown-content">siestes par semaines</span>
-			</div>
-			<div class="countdown">
-				<span class="countdown-header">6</span>
-				<span class="countdown-content">SMS par heure</span>
-			</div>
-			<div class="countdown">
-				<span class="countdown-header">5</span>
-				<span class="countdown-content">sens en effervescence</span>
-			</div>
-			<div class="countdown">
-				<span class="countdown-header">4</span>
-				<span class="countdown-content">prénoms en balance</span>
-			</div>
-			<div class="countdown">
-				<span class="countdown-header">3</span>
-				<span class="countdown-content">échographies</span>
-			</div>
-			<div class="countdown">
-				<span class="countdown-header">2</span>
-				<span class="countdown-content">litres par jour</span>
-			</div>
-			<div class="countdown">
-				<span class="countdown-header">1</span>
-				<span class="countdown-content">heureux événement</span>
+				<span class="countdown-header" style="color:transparent;">patch</span>
 			</div>
 
 		</div>
