@@ -59,6 +59,8 @@
 			<div id="trees_2" class="trees" data-0="display:none;left:-50%;bottom:0;" data-11500="display:block;" data-14000="left:0%;"></div>
 			<div id="trees_3" class="trees" data-0="display:none;right:-50%;bottom:0;" data-11500="display:block;" data-14000="right:0%;"></div>
 
+			<div id="baby" data-0="display:none;opacity:0;" data-15000="display:block;opacity:0;" data-16000="opacity:0.5;" data-17000="opacity:0;" data-18000="opacity:0.75;" data-19000="opacity:0.25;" data-20000="opacity:1;"></div>
+
 
 			<!-- Elements -->
 			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
@@ -120,10 +122,10 @@
 		var audioElm = $('#tardis_sound').get(0);
 		$(window).scroll(function() {
 			var pageScroll = $(window).scrollTop();
-			if(!playing && pageScroll > 15500 && pageScroll < 17000) {
+			if(!playing && pageScroll > 15500 && pageScroll < 25000) {
 				audioElm.play();
 				playing = true;
-			} else if(pageScroll > 17000 || pageScroll < 15500) {
+			} else if(pageScroll > 25000 || pageScroll < 15500) {
 				audioElm.pause();
 				audioElm.currentTime = 0;
 				playing = false;
