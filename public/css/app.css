@@ -145,7 +145,6 @@ body.pace-done #content {
     padding: 1%;
     background-color: #fff0ca;
     border: solid 5px #875811;
-    border-radius: 0;
     font-family: 'Satisfy', cursive;
     font-size: 2rem;
 }
@@ -246,7 +245,7 @@ body.pace-done #content {
         padding: 1%;
         background-color: #fff0ca;
         border: solid 5px #875811;
-        border-radius: 10%;
+        border-radius: 10px;
         font-family: 'Satisfy', cursive;
         font-size: 3rem;
     }
