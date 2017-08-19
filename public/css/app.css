@@ -106,7 +106,7 @@ body.pace-done #content {
 .clouds {
 	position: fixed;
     width: 100%;
-    height: 80%;
+    height: 70%;
 }
 
 .plains,
@@ -119,7 +119,7 @@ body.pace-done #content {
 
 #clouds_1 {
     background: url("../img/clouds_1.svg") no-repeat scroll;
-    background-size: contain auto;
+    background-size: cover auto;
     background-position: center center;
     /*background-color: rgba(0, 0, 0, 0);*/
     background-color: red;
