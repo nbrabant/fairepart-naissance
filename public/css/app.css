@@ -117,16 +117,8 @@ body.pace-done #content {
 }
 
 
-#clouds_1 {
-    background: url("../img/clouds_1.svg") no-repeat scroll;
-    background-size: cover auto;
-    background-position: center center;
-    /*background-color: rgba(0, 0, 0, 0);*/
-    background-color: red;
-}
-#clouds_2 {
-    background: url("../img/clouds_2.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);
-}
+#clouds_1 {background: url("../img/clouds_1.svg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);}
+#clouds_2 {background: url("../img/clouds_2.svg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);}
 #plains_1 {
     background: url("../img/plains_1.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);
 }

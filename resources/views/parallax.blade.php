@@ -45,7 +45,7 @@
 
 			<!-- Scene -->
 			<div id="clouds_1" class="clouds" data-0="display:none;opacity:0;bottom:-50%" data-8000="display:block;opacity:0;" data-9000="bottom:0%;opacity:1;" data-10000="bottom:40%"></div>
-			<div id="clouds_2" class="clouds" data-0="display:none;opacity:0;bottom:-50%" data-8500="display:block;opacity:0;" data-9500="bottom:0%;opacity:1;" data-10500="bottom:15%"></div>
+			<div id="clouds_2" class="clouds" data-0="display:none;opacity:0;bottom:-50%" data-8500="display:block;opacity:0;" data-9500="bottom:0%;opacity:1;" data-10500="bottom:25%"></div>
 
 			<div id="trees_1" class="trees" data-0="display:none;left:-50%;bottom:0;" data-11500="display:block;" data-14000="left:0%;"></div>
 
