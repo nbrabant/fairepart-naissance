@@ -60,7 +60,7 @@
 			<div id="trees_3" class="trees" data-0="display:none;right:-50%;bottom:0;" data-11500="display:block;" data-14000="right:0%;"></div>
 
 			<div id="baby" data-0="display:none;opacity:0;" data-15000="display:block;opacity:0;" data-16000="opacity:0.5;" data-17000="opacity:0;" data-18000="opacity:0.75;" data-19000="opacity:0.25;" data-20000="opacity:1;"></div>
-			<div id="info-block" class="text-center">
+			<div id="info-block" class="text-center hide">
 				<div class="clearfix head-title">
 					@if ($datas['type'] === 'boy')
 					    C'est un garçon !!!
