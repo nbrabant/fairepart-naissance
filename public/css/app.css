@@ -203,7 +203,12 @@ body.pace-done #content {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+    #baby {
+        bottom: 10%;
+        height: 30%;
+        left: 14%;
+        width: 20%;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
