@@ -20,9 +20,9 @@
     </head>
     <body data-0="background-color:black;" data-12500="background-color:black;">
 
-        <div id="content">
+        <!-- <div id="content"> -->
             @yield('content')
-        </div>
+        <!-- </div> -->
 
 		<script charset="utf-8" src="js/d3.min.js" type="text/javascript"></script>
 		<script src="js/modernizr.custom.83387.js" type="text/javascript" ></script>
