@@ -203,6 +203,9 @@ body.pace-done #content {
 
 
 @media (min-width: 480px) {
+    .clouds {
+        height: 100%;
+    }
 
     #baby {
         bottom: 10%;
