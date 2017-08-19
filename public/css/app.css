@@ -120,8 +120,9 @@ body.pace-done #content {
 #clouds_1 {
     background: url("../img/clouds_1.svg") no-repeat scroll;
     background-size: contain;
-    background-position: right center;
-    background-color: rgba(0, 0, 0, 0);
+    background-position: center center;
+    /*background-color: rgba(0, 0, 0, 0);*/
+    background-color: red;
 }
 #clouds_2 {
     height: 80%;
