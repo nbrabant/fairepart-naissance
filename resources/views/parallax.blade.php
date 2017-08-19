@@ -60,14 +60,39 @@
 			<div id="trees_3" class="trees" data-0="display:none;right:-50%;bottom:0;" data-11500="display:block;" data-14000="right:0%;"></div>
 
 			<div id="baby" data-0="display:none;opacity:0;" data-15000="display:block;opacity:0;" data-16000="opacity:0.5;" data-17000="opacity:0;" data-18000="opacity:0.75;" data-19000="opacity:0.25;" data-20000="opacity:1;"></div>
+			<div id="info-block" class="text-center">
+				<div class="clearfix head-title">
+					@if ($datas['type'] === 'boy')
+					    C'est un garçon !!!
+					@else
+					    C'est une fille !!!
+					@endif
+				</div>
+				<div class="clearfix">
+					Je m'appelle
+				</div>
+				<div class="clearfix head-title">
+					@foreach ($datas['name'] as $letter)
+						<span>{{ $letter }}</span>
+					@endforeach
+				</div>
+				<div class="clearfix">
+					Je suis né le {{ $datas['date'] }} à {{ $datas['moment'] }}
+				</div>
+				<div class="clearfix">
+					<div class="col-sm-12">
+						et je mesure {{ $datas['size'] }} pour  {{ $datas['weight'] }}
+					</div>
+				</div>
+			</div>
 
 
 			<!-- Elements -->
-			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
+			<!-- <div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
 			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:80%;width:2%;height:4%;" data-100="display:block;opacity:1;" data-1000="left:0%;top:80%;width:10%;height:20%;opacity:1;" data-1500="left:-10%;opacity:0;" data-1550="display:none;"></div>
 
 			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
-			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
+			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div> -->
 
 
 			<!-- Sections -->

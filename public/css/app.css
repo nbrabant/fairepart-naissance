@@ -128,6 +128,8 @@ body.pace-done #content {
 #trees_2 {background: url("../img/trees_2.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);}
 #trees_3 {background: url("../img/trees_3.svg") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);}
 #baby {position: fixed;bottom:10%;height:30%;left:20%;width: 20%;background: url("../img/baby.png") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);}
+#info-block {position: fixed; top: 5%; right: 2%; width: 40%; min-height: 25%; height: auto; padding: 1%; background-color: #fff0ca; border: solid 5px #875811; border-radius: 10%; font-family: 'Satisfy', cursive; font-size: 3rem;}
+#info-block .head-title {font-size: 4rem;}
 /* end background */
 
 
