@@ -2,10 +2,18 @@
 
 @section('content')
 
+	<!-- <ul id="nav">
+		<li><a href="#1">Slaph</a></li>
+		<li><a href="#2">Zipp</a></li>
+		<li><a href="#3">Boom</a></li>
+	</ul> -->
+
 	<div id="wrapper">
 
 		<div id="content">
-			<div class="swipe text-center" data-0="opacity:1;" data-300="opacity:0.5;" data-800="opacity:0;">
+			<div class="play" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"><span class="glyphicon glyphicon-play"></span> Cliquez pour lancer l'animation</div>
+			<div class="scroll" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"> Ou scrollez pour continuer</div>
+			<div class="swipe" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;">
 				<p>
 					Scrollez/Glissez pour continuer
 				</p>
