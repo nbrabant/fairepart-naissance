@@ -87,14 +87,6 @@
 			</div>
 
 
-			<!-- Elements -->
-			<!-- <div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
-			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:80%;width:2%;height:4%;" data-100="display:block;opacity:1;" data-1000="left:0%;top:80%;width:10%;height:20%;opacity:1;" data-1500="left:-10%;opacity:0;" data-1550="display:none;"></div>
-
-			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div>
-			<div class="strawberry" style="position:fixed;" data-0="display:none;opacity:0;top:0%;left:-10%;width:5%;height:10%;" data-100="display:block;opacity:1;" data-1000="left:90%;top:50%;width:15%;height:30%;opacity:1;" data-1500="left:100%;opacity:0;" data-1550="display:none;"></div> -->
-
-
 			<!-- Sections -->
 			<div class="countdown" style="position:fixed;" data-0="display:none;" data-200="display:block;" data-700="opacity:1;" data-900="opacity:0;">
 				<span class="countdown-header" data-0="opacity:0;" data-200="opacity:0;" data-400="opacity:1;">9</span>
@@ -126,7 +118,7 @@
 			</div>
 			<div class="countdown" style="position:fixed;" data-0="display:none;" data-7200="display:block;" data-7700="opacity:1;" data-7900="opacity:0;">
 				<span class="countdown-header" data-0="opacity:0;" data-7200="opacity:0;" data-7400="opacity:1;">2</span>
-				<span class="countdown-content" data-0="opacity:0;" data-7400="opacity:0;" data-7600="opacity:1;">litres par jour</span>
+				<span class="countdown-content" data-0="opacity:0;" data-7400="opacity:0;" data-7600="opacity:1;">litres d'eau par jour</span>
 			</div>
 			<div class="countdown" style="position:fixed;" data-0="display:none;" data-8200="display:block;" data-8700="opacity:1;" data-8900="opacity:0;">
 				<span class="countdown-header" data-0="opacity:0;" data-8200="opacity:0;" data-8400="opacity:1;">1</span>
