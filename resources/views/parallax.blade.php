@@ -5,7 +5,7 @@
 	<div id="wrapper">
 
 		<div id="content">
-			<div class="swipe text-center" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;">
+			<div class="swipe text-center" data-0="opacity:1;" data-300="opacity:0.5;" data-800="opacity:0;">
 				<p>
 					Scrollez/Glissez pour continuer
 				</p>
