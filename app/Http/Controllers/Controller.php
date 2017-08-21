@@ -33,6 +33,8 @@ class Controller extends BaseController
 
     public function getIndex()
     {
+        dd($_SERVER);
+
 		return view('parallax', [
             'datas' => $this->childProperties[$this->childType],
         ]);
