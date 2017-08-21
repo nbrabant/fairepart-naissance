@@ -13,7 +13,7 @@
 		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'>
 		<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 		<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
-        <link rel='stylesheet' type='text/css' href="/css/app.css">
+        <link rel='stylesheet' type='text/css' href="/css/app.css?ts={{ time() }}">
 
 		<script src="js/jquery-2.1.1.js" type="text/javascript" ></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" ></script>
