@@ -33,7 +33,11 @@ class Controller extends BaseController
 
     public function getIndex()
     {
-        dd($_SERVER);
+        if ($this->maintenance && $_SERVER['HTTP_HOST'] === 'baby_parallax.dev') {
+            return view('parallax', [
+                'datas' => $this->childProperties[$this->childType],
+            ]);
+        }
 
 		return view('parallax', [
             'datas' => $this->childProperties[$this->childType],
