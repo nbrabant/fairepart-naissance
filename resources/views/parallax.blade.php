@@ -2,18 +2,14 @@
 
 @section('content')
 
-	<!-- <ul id="nav">
-		<li><a href="#1">Slaph</a></li>
-		<li><a href="#2">Zipp</a></li>
-		<li><a href="#3">Boom</a></li>
-	</ul> -->
-
 	<div id="wrapper">
 
 		<div id="content">
-			<div class="play" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"><span class="glyphicon glyphicon-play"></span> Cliquez pour lancer l'animation</div>
-			<div class="scroll" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"> Ou scrollez pour continuer</div>
-			<div class="swipe" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;"> Glissez pour continuer</div>
+			<div class="swipe text-center" data-0="opacity:1;" data-250="opacity:0.5;" data-500="opacity:0;">
+				<p>
+					Scrollez/Glissez pour continuer
+				</p>
+			</div>
 
 			<svg class="particles" height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" data-0=" display:block; opacity:0.5;" data-1200="display:block; opacity:0.5;" data-2500=" display:block; opacity:0;">
 			<?php
