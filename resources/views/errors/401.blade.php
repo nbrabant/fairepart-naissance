@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>@lang('errors.error403').</title>
+        <title>Non autorisé.</title>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:200,400" rel="stylesheet" type="text/css">
 
@@ -46,8 +46,10 @@
     <body>
         <div class="container">
             <div class="content">
-				<i class="fa fa-ban" style="font-size:120px;color:#FF5959;margin-bottom:30px;"></i>
-                <div class="title">@lang('errors.error401')</div>
+				<div class="title">
+                    Accès restreint aux superviseurs
+                </div>
+                <img src="/img/401.jpg"/>
             </div>
         </div>
     </body>
