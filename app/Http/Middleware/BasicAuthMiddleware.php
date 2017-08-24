@@ -16,9 +16,11 @@ class BasicAuthMiddleware
     public function handle($request, Closure $next) {
         if($request->getUser() != 'admin' || $request->getPassword() != 'PasswordHere!') {
             $headers = array('WWW-Authenticate' => 'Basic');
+
+            abort(401);
             return response('Admin Login', 401, $headers);
         }
-        
+
         return $next($request);
     }
 }
