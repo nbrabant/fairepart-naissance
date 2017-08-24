@@ -7,9 +7,6 @@ use Laravel\Lumen\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
-
-    private $maintenance = true;
-
     protected $childType = 'girl';
 
     private $childProperties = [
@@ -34,16 +31,14 @@ class Controller extends BaseController
 
     public function getIndex()
     {
-
-
-        if ($this->maintenance && $_SERVER['HTTP_HOST'] === 'baby_parallax.dev') {
+        if (Configuration::onMaintenanceMode() && $_SERVER['HTTP_HOST'] === 'baby_parallax.dev') {
             return view('parallax', [
-                'datas' => $this->childProperties[$this->childType],
+                'datas' => Configuration::getList(),
             ]);
         }
 
 		return view('parallax', [
-            'datas' => $this->childProperties[$this->childType],
+            'datas' => Configuration::getList(),
         ]);
     }
 }

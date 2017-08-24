@@ -60,7 +60,7 @@
 			<div id="baby" data-0="display:none;opacity:0;" data-15000="display:block;opacity:0;" data-16000="opacity:0.5;" data-17000="opacity:0;" data-18000="opacity:0.75;" data-19000="opacity:0.25;" data-20000="opacity:1;"></div>
 			<div id="info-block" class="text-center" data-0="display:none;opacity:0;top:-50%;" data-19000="display:block;opacity:0;" data-20500="opacity:1;top:-50%;" data-22000="top:5%;">
 				<div class="clearfix head-title">
-					@if ($datas['type'] === 'boy')
+					@if ($datas['gender'] === 'boy')
 					    C'est un garçon !!!
 					@else
 					    C'est une fille !!!
