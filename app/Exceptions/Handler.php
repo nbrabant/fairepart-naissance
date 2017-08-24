@@ -33,10 +33,6 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $e)
     {
-        if ($e instanceof HttpException) {
-
-        }
-
         parent::report($e);
     }
 
