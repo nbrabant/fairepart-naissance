@@ -11,9 +11,11 @@
 |
 */
 
-$app->get('login', 'Controller@getLogin');
-$app->group(['middleware' => 'auth'], function ($app) {
+$app->get('/', 'Controller@getIndex');
+
+$app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'App\Http\Controllers\Admin'], function($app) {
+
+    $app->get('/', 'AdminController@index');
+    $app->get('/manage', 'AdminController@index');
 
 });
-
-$app->get('/', 'Controller@getIndex');
