@@ -13,7 +13,7 @@
 
 $app->get('/', 'Controller@getIndex');
 
-$app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'App\Http\Controllers\Admin'], function($app) {
+$app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'App\Http\Controllers'], function($app) {
 
     $app->get('/', 'AdminController@index');
     $app->get('/manage', 'AdminController@index');
