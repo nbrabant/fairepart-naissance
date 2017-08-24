@@ -18,7 +18,7 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         AuthorizationException::class,
-        HttpException::class,
+        // HttpException::class,
         ModelNotFoundException::class,
         ValidationException::class,
     ];
@@ -33,6 +33,10 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $e)
     {
+        if ($e instanceof HttpException) {
+
+        }
+
         parent::report($e);
     }
 

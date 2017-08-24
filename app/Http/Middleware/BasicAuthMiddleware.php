@@ -18,7 +18,7 @@ class BasicAuthMiddleware
             $headers = array('WWW-Authenticate' => 'Basic');
 
             abort(401);
-            return response('Admin Login', 401, $headers);
+            // return response('Admin Login', 401, $headers);
         }
 
         return $next($request);
