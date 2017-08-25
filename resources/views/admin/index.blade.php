@@ -1,5 +1,9 @@
 @extends('admin.layout')
 
 @section('content')
-    It works!
+
+    <div class="page-content">
+        Administration
+    </div>
+
 @endsection

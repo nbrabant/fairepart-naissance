@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,22 +7,41 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" /> -->
+        <link rel='stylesheet' type='text/css' href="/css/backpack.css">
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'>
-		<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-		<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
-        <link rel='stylesheet' type='text/css' href="/css/admin.css?ts={{ time() }}">
 
-		<script src="js/jquery-2.1.1.js" type="text/javascript" ></script>
-		<script src="js/bootstrap.min.js" type="text/javascript" ></script>
+
     </head>
-    <body data-0="background-color:black;" data-12500="background-color:black;">
+    <body>
 
-        <div id="content-wrapper">
-            @yield('content')
+        @include('admin.partials.header')
+
+        <div id="main-container" class="main-container clearfix">
+            @include('admin.partials.sidebar')
+
+            <div class="main-content col-sm-9">
+                <div class="main-content-inner">
+
+                    <div id="breadcrumbs" class="breadcrumbs">
+                        @yield('breadcrumb')
+                    </div>
+
+                    @yield('content')
+
+                </div>
+            </div>
+
+            @include('admin.partials.footer')
         </div>
+
+        <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+        <script type="text/javascript" src="js/bootstrap.min.js" ></script>
 
     </body>
 

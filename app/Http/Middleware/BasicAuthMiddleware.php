@@ -14,11 +14,11 @@ class BasicAuthMiddleware
      * @return mixed
      */
     public function handle($request, Closure $next) {
-        if($request->getUser() != 'admin' || $request->getPassword() != 'PasswordHere!') {
+        if ($request->getUser() != 'admin' || $request->getPassword() != 'PasswordHere!') {
             $headers = array('WWW-Authenticate' => 'Basic');
 
-            return view('errors.401');
-            // return response('Admin Login', 401, $headers);
+            // return view('errors.401');
+            return response('Admin Login', 401, $headers);
         }
 
         return $next($request);
