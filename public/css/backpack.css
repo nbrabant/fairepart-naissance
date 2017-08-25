@@ -1,5 +1,14 @@
 #header {
-    width: 100%;
     background-color: #a8a8f6;
+    color: #fff;
+}
+
+#navbar > p {
+    line-height: 5rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+#navbar a {
     color: #fff;
 }

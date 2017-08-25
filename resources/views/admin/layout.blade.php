@@ -9,23 +9,21 @@
 
         <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'>
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-        <!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" /> -->
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css" />
         <link rel='stylesheet' type='text/css' href="/css/backpack.css">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-
-
     </head>
-    <body>
+    <body class="clearfix">
 
         @include('admin.partials.header')
 
-        <div id="main-container" class="main-container clearfix">
+        <div class="container theme-showcase" role="main">
             @include('admin.partials.sidebar')
 
-            <div class="main-content col-sm-9">
+            <div class="col-sm-9">
                 <div class="main-content-inner">
 
                     <div id="breadcrumbs" class="breadcrumbs">
