@@ -15,15 +15,14 @@
     position: fixed;
     background-color: #eeeeee;
     height: 100%;
+    padding-top: 10px;
 }
 
 #sidebar a {
     color: #333;
 }
 
-#main-container-inner {
-    padding-top: 10px;
-}
+#main-container-inner {}
 
 #breadcrumbs {
 

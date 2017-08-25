@@ -1,3 +1,4 @@
+
 @if (isset($errors) && count($errors) > 0)
     <div class="alert alert-danger">
         @if (is_string($errors))

@@ -18,4 +18,9 @@ $app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'Ap
     $app->get('/', 'AdminController@index');
     $app->get('/manage', 'AdminController@index');
 
+    $app->get('/configuration', 'Admin\ConfigurationController@show');
+    $app->post('/configuration', 'Admin\ConfigurationController@update');
+
+
+
 });

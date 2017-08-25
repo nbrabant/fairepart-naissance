@@ -86,6 +86,10 @@ $app->routeMiddleware([
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
+$app->register('Collective\Html\HtmlServiceProvider');
+class_alias('Collective\Html\HtmlFacade', 'Html');
+class_alias('Collective\Html\FormFacade', 'Form');
+
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes

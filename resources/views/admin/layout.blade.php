@@ -28,6 +28,8 @@
 
                 <div id="main-container-inner" class="col-sm-offset-2 col-sm-10">
 
+                    @yield('title')
+
                     <div id="breadcrumbs" class="breadcrumbs">
                         @yield('breadcrumb')
                     </div>
