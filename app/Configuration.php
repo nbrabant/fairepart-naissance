@@ -1,5 +1,8 @@
-<?php namespace App;
+<?php
 
+namespace App;
+
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Configuration extends Model {
@@ -12,6 +15,11 @@ class Configuration extends Model {
         'value',
     ];
 
+    public static function getValidators()
+    {
+        return self::getList(true);
+    }
+
     public function getFormattedValueAttribute()
     {
         if ($this->key === 'name') {
@@ -19,6 +27,17 @@ class Configuration extends Model {
         }
 
         return $this->value;
+    }
+
+    public function getValidatorAttribute()
+    {
+        if ($this->key === 'maintenance') {
+            return 'required|in:0,1';
+        } elseif ($this->key === 'gender') {
+            return 'required|in:boy,girl';
+        }
+
+        return 'required';
     }
 
     public static function onMaintenanceMode()
@@ -29,15 +48,20 @@ class Configuration extends Model {
     }
 
     // get list
-    public static function getList()
+    public static function getList($validator = false)
     {
         $return = [];
 
-        self::all()->each(function($config) use (&$return) {
-            $return[$config->key] = $config->formatted_value;
+        self::all()->each(function($config) use (&$return, $validator) {
+            $return[$config->key] = $validator ? $config->validator : $config->formatted_value;
         });
 
         return $return;
+    }
+
+    public function scopeByKey(Builder $query, $key = '')
+    {
+        return $query->whereKey($key);
     }
 
 
