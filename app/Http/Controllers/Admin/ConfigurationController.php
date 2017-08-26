@@ -9,6 +9,7 @@ use Laravel\Lumen\Routing\Controller as BaseController;
 
 class ConfigurationController extends BaseController
 {
+    
     public function show(Request $request)
     {
         $configurations = Configuration::all();

@@ -21,6 +21,7 @@ $app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'Ap
     $app->get('/configuration', 'Admin\ConfigurationController@show');
     $app->post('/configuration', 'Admin\ConfigurationController@update');
 
-
+    $app->get('/emails', 'Admin\EmailsController@index');
+    
 
 });

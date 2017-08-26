@@ -27,3 +27,15 @@
 #breadcrumbs {
 
 }
+
+.page_header .btn {
+    margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+
+    #sidebar {
+        height: auto;
+    }
+
+}

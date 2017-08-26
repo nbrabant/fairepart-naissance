@@ -10,7 +10,7 @@
               <a href="{{ url('/admin/configuration') }}"><span class="glyphicon glyphicon-wrench"></span> Configuration</a>
           </li>
           <li class="">
-              <a href="#tab3"><span class="glyphicon glyphicon-envelope"></span> Emails</a>
+              <a href="{{ url('/admin/emails') }}"><span class="glyphicon glyphicon-envelope"></span> Emails</a>
           </li>
           <li class="">
               <a href="#tab3"><span class="glyphicon glyphicon-dashboard"></span> Analytics</a>
