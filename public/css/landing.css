@@ -1,0 +1,16 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #785A80;
+    color: #D8B8E1;
+}
+
+#landing {}
+
+#landing-image {
+    width: 100%;
+}
+
+#landing-image > img {
+    margin: 0 auto;
+}
