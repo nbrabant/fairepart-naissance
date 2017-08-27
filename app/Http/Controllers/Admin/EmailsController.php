@@ -18,12 +18,29 @@ class EmailsController extends BaseController
 
     public function create(Request $request)
     {
-        # code...
+        return view('admin.emails.create');
     }
 
     public function store(Request $request)
     {
-        # code...
+
+
+
+        return redirect('admin/emails');
+    }
+
+    public function show(Request $request)
+    {
+
+
+        return view('admin.emails.show');
+    }
+
+    public function update(Request $request)
+    {
+
+
+        return redirect('admin/emails');
     }
 
 }

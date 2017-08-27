@@ -13,7 +13,6 @@
         </div>
     </div>
 
-
 @endsection
 
 @section('content')
@@ -43,7 +42,9 @@
                             <td>{{ $email->sended }}</td>
                             <td>{{ $email->readed }}</td>
                             <td>
-
+                                <a href="{{ url('/admin/emails/update/' . $email->id) }}" class="btn btn-sm btn-info">
+                    				<span class="glyphicon glyphicon-plus"></span> Editer
+                    			</a>
                             </td>
                         </tr>
                     @endforeach

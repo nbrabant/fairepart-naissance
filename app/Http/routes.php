@@ -15,13 +15,17 @@ $app->get('/', 'Controller@getIndex');
 
 $app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'App\Http\Controllers'], function($app) {
 
-    $app->get('/', 'AdminController@index');
-    $app->get('/manage', 'AdminController@index');
+    $app->get('/',                      'AdminController@index');
+    $app->get('/manage',                'AdminController@index');
 
-    $app->get('/configuration', 'Admin\ConfigurationController@show');
-    $app->post('/configuration', 'Admin\ConfigurationController@update');
+    $app->get('/configuration',         'Admin\ConfigurationController@show');
+    $app->post('/configuration',        'Admin\ConfigurationController@update');
 
-    $app->get('/emails', 'Admin\EmailsController@index');
-    
+    $app->get('/emails',                'Admin\EmailsController@index');
+    $app->get('/emails/create',         'Admin\EmailsController@create');
+    $app->post('/emails/store',         'Admin\EmailsController@store');
+    $app->get('/emails/update/{id}',    'Admin\EmailsController@show');
+    $app->post('/emails/update/{id}',   'Admin\EmailsController@update');
+
 
 });
