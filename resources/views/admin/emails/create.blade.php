@@ -19,14 +19,28 @@
             <div class="form-group">
                 {!! Form::label('email', 'Adresse E-mail', array('class' => 'col-md-3 control-label')) !!}
                 <div class="col-md-9">
-                    {!! Form::text('email', null, array('class' => 'form-control')) !!}
+                    {!! Form::text('email', $email->email, array('class' => 'form-control')) !!}
                 </div>
             </div>
 
             <div class="form-group">
                 {!! Form::label('ip_address', 'Adresse IP', array('class' => 'col-md-3 control-label')) !!}
                 <div class="col-md-9">
-                    {!! Form::text('ip_address', null, array('class' => 'form-control')) !!}
+                    {!! Form::text('ip_address', $email->ip_address, array('class' => 'form-control')) !!}
+                </div>
+            </div>
+
+            <div class="form-group">
+                {!! Form::label('sended', 'Envoyé', array('class' => 'col-md-3 control-label')) !!}
+                <div class="col-md-9">
+                    {!! Form::checkbox('sended', $email->sended, true, array('class' => 'form-control')) !!}
+                </div>
+            </div>
+
+            <div class="form-group">
+                {!! Form::label('readed', 'Accédé', array('class' => 'col-md-3 control-label')) !!}
+                <div class="col-md-9">
+                    {!! Form::checkbox('readed', $email->readed, true, array('class' => 'form-control')) !!}
                 </div>
             </div>
 

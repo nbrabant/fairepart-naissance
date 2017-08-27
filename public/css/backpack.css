@@ -35,8 +35,8 @@
 @media (max-width: 640px) {
 
     #sidebar {
+        position: relative;
         height: auto;
-        clear: both;
     }
 
 }
