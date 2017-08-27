@@ -18,7 +18,12 @@ class EmailsController extends BaseController
 
     public function create(Request $request)
     {
-        return view('admin.emails.create');
+        $email = new Email([
+            'sended' => 0,
+            'readed' => 0,
+        ]);
+        
+        return view('admin.emails.create', compact('email'));
     }
 
     public function store(Request $request)

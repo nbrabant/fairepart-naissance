@@ -36,6 +36,7 @@
 
     #sidebar {
         height: auto;
+        clear: both;
     }
 
 }
