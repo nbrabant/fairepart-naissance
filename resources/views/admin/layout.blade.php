@@ -26,7 +26,7 @@
 
                 @include('admin.partials.sidebar')
 
-                <div id="main-container-inner" class="col-sm-offset-2 col-sm-10">
+                <div id="main-container-inner" class="col-sm-offset-2 col-sm-10 col-xs-12">
 
                     @yield('title')
 

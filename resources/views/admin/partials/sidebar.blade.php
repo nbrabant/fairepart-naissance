@@ -1,5 +1,5 @@
 
-<div id="sidebar" class="col-sm-2">
+<div id="sidebar" class="col-sm-2 col-xs-12">
 
     <nav class="nav-sidebar">
 		<ul class="nav tabs">

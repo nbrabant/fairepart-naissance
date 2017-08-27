@@ -7,7 +7,7 @@
             <h1>Emails</h1>
         </div>
         <div class="pull-right">
-            <a href="{{ url('/emails/create') }}" class="btn btn-sm btn-success">
+            <a href="{{ url('/admin/emails/create') }}" class="btn btn-sm btn-success">
 				<span class="glyphicon glyphicon-plus"></span> Ajouter un email
 			</a>
         </div>
