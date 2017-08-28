@@ -1,3 +1,6 @@
+@import url('http://fonts.googleapis.com/css?family=Gudea:400,700');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
 body {
     height: 100%;
     width: 100%;
@@ -13,4 +16,9 @@ body {
 
 #landing-image > img {
     margin: 0 auto;
+}
+
+#landing > p {
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
 }
