@@ -7,7 +7,7 @@ class ConfigurationTableSeeder extends Seeder
 {
 
     private $data = [
-        [ 'name' => "En maintenance",   'key' => "maintenance",     'value' => 0, ],
+        [ 'name' => "En maintenance",   'key' => "maintenance",     'value' => 1, ],
         [ 'name' => "Genre",            'key' => "gender",          'value' => 'boy', ],
         [ 'name' => "Prénom",           'key' => "name",            'value' => 'A|l|a|s|t|a|i|r', ],
         [ 'name' => "Taille",           'key' => "size",            'value' => '56cm', ],
