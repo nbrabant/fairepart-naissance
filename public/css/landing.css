@@ -6,6 +6,8 @@ body {
     width: 100%;
     background-color: #785A80;
     color: #D8B8E1;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
 }
 
 #landing {}
@@ -18,7 +20,40 @@ body {
     margin: 0 auto;
 }
 
-#landing > p {
-    font-family: 'Satisfy', cursive;
+#landing > p {}
+
+#landing-form {
+    margin: 30px auto 0;
+    width: 50%
+}
+
+#landing-form #form-email {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: solid 1px #D8B8E1;
+    border-radius: 8px;
     font-size: 2rem;
+    text-align: center;
+}
+
+#landing-form .btn-register {
+    background-color: transparent;
+    color: #fff;
+    font-size: 3rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#landing-form .btn-register:active {
+    -webkit-text-shadow: 0 0 7px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.25);
+}
+
+
+
+@media (max-width: 640px) {
+    #landing-form {
+        width: 100%
+    }
 }

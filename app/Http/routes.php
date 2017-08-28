@@ -11,7 +11,8 @@
 |
 */
 
-$app->get('/', 'Controller@getIndex');
+$app->get('/',              'Controller@getIndex');
+$app->post('/register',     'Controller@addEmail');
 
 $app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'App\Http\Controllers'], function($app) {
 
