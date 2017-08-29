@@ -13,6 +13,9 @@
               <a href="{{ url('/admin/emails') }}"><span class="glyphicon glyphicon-envelope"></span> Emails</a>
           </li>
           <li class="">
+              <a href="{{ url('/admin/jobs') }}"><span class="glyphicon glyphicon-retweet"></span> Queue jobs</a>
+          </li>
+          <li class="">
               <a href="#tab3"><span class="glyphicon glyphicon-dashboard"></span> Analytics</a>
           </li>
 		</ul>

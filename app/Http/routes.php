@@ -28,5 +28,6 @@ $app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'Ap
     $app->get('/emails/update/{id}',    'Admin\EmailsController@show');
     $app->post('/emails/update/{id}',   'Admin\EmailsController@update');
 
+    $app->get('/jobs',                  'Admin\JobsController@index');
 
 });
