@@ -24,6 +24,8 @@
                 </div>
             </div>
 
+            <div id="result"></div>
+
             <div class="form-group">
                 <div class="col-xs-12">
                     {!! Form::submit('Envoyer', array('class' => 'btn btn-register')) !!}
@@ -44,10 +46,18 @@
                     data        : {
                         'email': $('#form-email').val()
                     },
-                    dataType    : 'json',
-                    encode      : true
+                    dataType    : 'json'
                 }).done(function(data) {
-                    console.log(data);
+                    $('#result').html('Votre email a bien été enregistré');
+                }).error(function(jqXHR, textStatus, errorThrown) {
+                    obj = JSON.parse(jqXHR.responseText);
+
+                    var msg = '';
+                    $.map(obj.email, function(row) {
+                        msg += row + "\n"
+                    });
+
+                    $('#result').html(msg)
                 });
 
                 event.preventDefault();
