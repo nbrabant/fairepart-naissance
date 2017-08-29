@@ -39,10 +39,12 @@ class Controller extends BaseController
         $attributes = $request->only(array_keys($this->validation));
         $attributes['ip_address'] = $_SERVER['REMOTE_ADDR'];
 
-        $object = $model::create($attributes);
-        $object->load($this->with);
+        $model::create($attributes);
 
-        return $object;
+        return [
+            'statut'        => 200,
+            'statusText'    => 'Votre email a bien été enregistré'
+        ];
     }
 
 }

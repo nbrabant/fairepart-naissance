@@ -41,23 +41,26 @@
         $(document).ready(function() {
             $('#landing-form').submit(function(event) {
                 $.ajax({
-                    type        : 'POST',
-                    url         : 'register',
-                    data        : {
+                    type: 'POST',
+                    url: 'register',
+                    data: {
                         'email': $('#form-email').val()
                     },
-                    dataType    : 'json'
-                }).done(function(data) {
-                    $('#result').html('Votre email a bien été enregistré');
-                }).error(function(jqXHR, textStatus, errorThrown) {
-                    obj = JSON.parse(jqXHR.responseText);
+                    dataType: 'json',
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        obj = JSON.parse(jqXHR.responseText);
 
-                    var msg = '';
-                    $.map(obj.email, function(row) {
-                        msg += row + "\n"
-                    });
+                        var msg = '';
+                        $.map(obj.email, function(row) {
+                            msg += row + "\n"
+                        });
 
-                    $('#result').html(msg)
+                        $('#result').html(msg)
+                    },
+                    success: function(data, textStatus, jqXHR) {
+
+                        $('#result').html('Votre email a bien été enregistré');
+                    }
                 });
 
                 event.preventDefault();
