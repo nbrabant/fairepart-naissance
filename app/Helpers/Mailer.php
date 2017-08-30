@@ -4,6 +4,7 @@ namespace App\Helpers;
 
 use PHPMailer\PHPMailer\OAuth as OAuth;
 use PHPMailer\PHPMailer\PHPMailer as PHPMailer;
+use League\OAuth2\Client\Provider\Google;
 use PHPMailer\PHPMailer\Exception;
 
 class Mailer
@@ -16,12 +17,15 @@ class Mailer
     protected $receiver_name    = '';
     protected $header           = [];
     protected $message          = '';
+    private $credentials        = null;
 
     public function __construct($template = 'emails/default')
     {
         $this->template     = $template;
         $this->sender_mail  = 'noreply@hellotheworld.net';
         $this->sender_name  = 'HAL';
+
+        $this->parseCredentials();
     }
 
     public function setSubject($subject) {
@@ -46,6 +50,40 @@ class Mailer
         $this->receiver_name = $receiverName;
     }
 
+    private function parseCredentials() {
+        if (!is_file(base_path('resources/credentials.json'))) {
+            return false;
+        }
+
+        if ( ($file = file_get_contents(base_path('resources/credentials.json'))) === false ) {
+            return false;
+        }
+
+        $this->credentials = json_decode($file);
+    }
+
+    private function getOauth()
+    {
+        if (!isset($this->credentials)) {
+            throw new Exception('Unknow credentials', 1);
+        }
+
+        $params = [
+            'clientId'      => $this->credentials->client_key,
+            'clientSecret'  => $this->credentials->client_secret_code,
+            // 'redirectUri'   => $redirectUri,
+            'accessType'    => 'offline'
+        ];
+
+        return new OAuth([
+            'provider'      => new Google($params),
+            'userName'      => 'brabantnicolas59@gmail.com',
+            'clientSecret'  => $this->credentials->client_secret_code,
+            'clientId'      => $this->credentials->client_key,
+            'refreshToken'  => $this->credentials->refresh_token,
+        ]);
+    }
+
     /**
      * Send email to the given recipient with the given dynamic values.
      *
@@ -62,7 +100,7 @@ class Mailer
             $mail->Host = "smtp.gmail.com";
             $mail->SMTPAuth = true;
 
-            $mail->oauth = $this->getOauth();
+            $mail->setOAuth = $this->getOauth();
 
 
             $mail->Username = "brabantnicolas59@gmail.com";
@@ -83,4 +121,5 @@ class Mailer
             \Log::error('Mailing error : '.$e->getMessage());
         }
     }
+
 }
