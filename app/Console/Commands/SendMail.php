@@ -43,7 +43,7 @@ class SendMail extends Command
 
         try {
             $mailer = new Mailer();
-            $mailer->setSubject('Nouveau message concernant le procès verbal');
+            $mailer->setSubject('Heureux événement en vue!');
             $mailer->setReceiver($email->email, $email->email);
             $mailer->send();
 
