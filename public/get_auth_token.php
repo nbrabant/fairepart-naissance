@@ -52,7 +52,7 @@ if (!isset($_GET['code']) && !isset($_GET['provider'])) {
 <?php
 exit;
 }
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 session_start();
 $providerName = '';
 if (array_key_exists('provider', $_GET)) {

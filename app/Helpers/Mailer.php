@@ -2,6 +2,7 @@
 
 namespace App\Helpers;
 
+use PHPMailer\PHPMailer\OAuth as OAuth;
 use PHPMailer\PHPMailer\PHPMailer as PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -60,6 +61,10 @@ class Mailer
             $mail->isSMTP();
             $mail->Host = "smtp.gmail.com";
             $mail->SMTPAuth = true;
+
+            $mail->oauth = $this->getOauth();
+
+
             $mail->Username = "brabantnicolas59@gmail.com";
             $mail->Password = "Y0ushalln0tpass";
             $mail->SMTPSecure = "tls";
