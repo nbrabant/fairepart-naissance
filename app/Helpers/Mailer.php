@@ -100,11 +100,13 @@ class Mailer
             $mail->Host = "smtp.gmail.com";
             $mail->SMTPAuth = true;
 
+            $mail->AuthType = "XOAUTH2";
+            $mail->Username = "";
+            $mail->Password = "";
             $mail->setOAuth = $this->getOauth();
 
-
-            $mail->Username = "brabantnicolas59@gmail.com";
-            $mail->Password = "Y0ushalln0tpass";
+            // $mail->Username = "brabantnicolas59@gmail.com";
+            // $mail->Password = "Y0ushalln0tpass";
             $mail->SMTPSecure = "tls";
             $mail->Port = 587;
 
