@@ -92,13 +92,14 @@ class Mailer
      */
     public function send()
     {
-        dd(extension_loaded('openssl'));
         try {
             $mail = new PHPMailer();
 
             $mail->SMTPDebug = 3;
             $mail->isSMTP();
-            $mail->Host = "tls:smtp.gmail.com:587";
+            // $mail->SMTPSecure = "tls";
+            $mail->Host = "smtp.gmail.com";
+            $mail->Port = "587";
             $mail->SMTPOptions = array(
                 'ssl' => array(
                     'verify_peer' => false,
