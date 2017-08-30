@@ -71,7 +71,7 @@ class Mailer
         $params = [
             'clientId'      => $this->credentials->client_key,
             'clientSecret'  => $this->credentials->client_secret_code,
-            'redirectUri'   => $redirectUri,
+            'redirectUri'   => '', //$redirectUri,
             'accessType'    => 'offline'
         ];
 
