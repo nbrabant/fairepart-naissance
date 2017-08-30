@@ -9,7 +9,8 @@
         "laravel/lumen-framework": "5.2.*",
         "vlucas/phpdotenv": "~2.2",
         "vluzrmos/collective-html": "^1.0",
-        "phpmailer/phpmailer": "^6.0"
+        "phpmailer/phpmailer": "^6.0",
+        "league/oauth2-google": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
