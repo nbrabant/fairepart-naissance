@@ -71,15 +71,13 @@ class Mailer
         $params = [
             'clientId'      => $this->credentials->client_key,
             'clientSecret'  => $this->credentials->client_secret_code,
-            'redirectUri'   => 'http://www.hellotheworld.net/get_auth_token.php',
-            'accessType'    => 'offline'
         ];
 
         return new OAuth([
             'provider'      => new Google($params),
-            'userName'      => 'brabantnicolas59@gmail.com',
-            'clientSecret'  => $this->credentials->client_secret_code,
             'clientId'      => $this->credentials->client_key,
+            'clientSecret'  => $this->credentials->client_secret_code,
+            'userName'      => 'brabantnicolas59@gmail.com',
             'refreshToken'  => $this->credentials->refresh_token,
         ]);
     }
@@ -96,23 +94,23 @@ class Mailer
             $mail = new PHPMailer();
 
             $mail->SMTPDebug = 3;
+
             $mail->isSMTP();
-            // $mail->SMTPSecure = "tls";
-            $mail->Host = "smtp.gmail.com";
+            $mail->Host = gethostbyname('smtp.gmail.com');
             $mail->Port = "587";
-            $mail->SMTPOptions = array(
-                'ssl' => array(
-                    'verify_peer' => false,
-                    'verify_peer_name' => false,
-                    'allow_self_signed' => true
-                )
-            );
+            $mail->SMTPSecure = "tls";
+
+            // $mail->SMTPOptions = array(
+            //     'ssl' => array(
+            //         'verify_peer' => false,
+            //         'verify_peer_name' => false,
+            //         'allow_self_signed' => true
+            //     )
+            // );
 
             $mail->SMTPAuth = true;
             $mail->AuthType = "XOAUTH2";
-            // $mail->Username = "";
-            // $mail->Password = "";
-            $mail->setOAuth = $this->getOauth();
+            $mail->setOAuth($this->getOauth());
 
 
             $mail->AddReplyTo($this->sender_mail, $this->sender_name);
