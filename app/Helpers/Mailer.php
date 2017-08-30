@@ -92,6 +92,7 @@ class Mailer
      */
     public function send()
     {
+        dd(extension_loaded('openssl'));
         try {
             $mail = new PHPMailer();
 
