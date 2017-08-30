@@ -71,7 +71,7 @@ class Mailer
         $params = [
             'clientId'      => $this->credentials->client_key,
             'clientSecret'  => $this->credentials->client_secret_code,
-            // 'redirectUri'   => $redirectUri,
+            'redirectUri'   => $redirectUri,
             'accessType'    => 'offline'
         ];
 
@@ -97,18 +97,21 @@ class Mailer
 
             $mail->SMTPDebug = 3;
             $mail->isSMTP();
-            $mail->Host = "smtp.gmail.com";
-            $mail->SMTPAuth = true;
+            $mail->Host = "tls:smtp.gmail.com:587";
+            $mail->SMTPOptions = array(
+                'ssl' => array(
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                    'allow_self_signed' => true
+                )
+            );
 
+            $mail->SMTPAuth = true;
             $mail->AuthType = "XOAUTH2";
-            $mail->Username = "";
-            $mail->Password = "";
+            // $mail->Username = "";
+            // $mail->Password = "";
             $mail->setOAuth = $this->getOauth();
 
-            // $mail->Username = "brabantnicolas59@gmail.com";
-            // $mail->Password = "Y0ushalln0tpass";
-            $mail->SMTPSecure = "tls";
-            $mail->Port = 587;
 
             $mail->AddReplyTo($this->sender_mail, $this->sender_name);
             $mail->SetFrom($this->sender_mail, $this->sender_name);
