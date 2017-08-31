@@ -23,7 +23,7 @@ class Mailer
     {
         $this->template     = $template;
         $this->sender_mail  = 'noreply@hellotheworld.net';
-        $this->sender_name  = 'HAL';
+        $this->sender_name  = 'HAL - www.hellotheworld.net';
 
         $this->parseCredentials();
     }
@@ -112,7 +112,7 @@ class Mailer
             $mail->AuthType = "XOAUTH2";
             $mail->setOAuth($this->getOauth());
 
-
+            $mail->CharSet = 'UTF-8';
             $mail->AddReplyTo($this->sender_mail, $this->sender_name);
             $mail->SetFrom($this->sender_mail, $this->sender_name);
             $mail->AddAddress($this->receiver_mail, $this->receiver_mail);
