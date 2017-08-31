@@ -43,7 +43,7 @@ class SendMail extends Command
         foreach ($emails as $email) {
             try {
                 $mailer = new Mailer();
-                $mailer->setSubject('Heureux événement en vue!');
+                $mailer->setSubject('Heureux &eacute;v&eacute;nement en vue!');
                 $mailer->setReceiver($email->email, $email->email);
                 $mailer->send();
 
