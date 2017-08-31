@@ -20,7 +20,6 @@ class Controller extends BaseController
 
     public function getIndex(Request $request)
     {
-        // return view('landing');
         if (Configuration::onMaintenanceMode() && $_SERVER['HTTP_HOST'] !== 'baby_parallax.dev') {
             return view('landing');
         }
