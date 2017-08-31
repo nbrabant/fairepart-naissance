@@ -39,18 +39,23 @@ class SendMail extends Command
      */
     public function handle()
     {
-        $email = Email::first();
+        $emails = Email::where('sended', 0)->limit(10)->get();
+        foreach ($emails as $email) {
+            try {
+                $mailer = new Mailer();
+                $mailer->setSubject('Heureux événement en vue!');
+                $mailer->setReceiver($email->email, $email->email);
+                $mailer->send();
 
-        try {
-            $mailer = new Mailer();
-            $mailer->setSubject('Heureux événement en vue!');
-            $mailer->setReceiver($email->email, $email->email);
-            $mailer->send();
-
-            // $email->sended = 1;
-            // $email->save();
-        } catch (Exception $e) {
-            dd($e);
+                // $email->sended = 1;
+                // $email->save();
+            } catch (Exception $e) {
+                // $email->sended = -1;
+                // $email->save();
+            } finally {
+                continue;
+            }
         }
+
     }
 }
