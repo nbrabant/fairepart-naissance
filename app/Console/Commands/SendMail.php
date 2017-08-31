@@ -52,8 +52,6 @@ class SendMail extends Command
             } catch (Exception $e) {
                 // $email->sended = -1;
                 // $email->save();
-            } finally {
-                continue;
             }
         }
 
