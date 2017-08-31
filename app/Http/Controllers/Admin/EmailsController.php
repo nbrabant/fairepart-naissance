@@ -19,7 +19,7 @@ class EmailsController extends BaseController
 
     public function index(Request $request)
     {
-        $emails = Email::all();
+        $emails = Email::paginate(15);
 
         return view('admin.emails.index', compact('emails'));
     }

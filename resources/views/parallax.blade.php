@@ -6,12 +6,6 @@
 
 @section('content')
 
-	<!-- <ul id="nav">
-		<li><a href="#1">Slaph</a></li>
-		<li><a href="#2">Zipp</a></li>
-		<li><a href="#3">Boom</a></li>
-	</ul> -->
-
 	<div id="wrapper">
 
 		<div id="content">
