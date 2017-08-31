@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Configuration;
 use App\Email;
 use App\Helpers\Mailer;
 
@@ -39,6 +40,10 @@ class SendMail extends Command
      */
     public function handle()
     {
+        if (Configuration::onMaintenanceMode()) {
+            return false;
+        }
+
         $emails = Email::where('sended', 0)->limit(10)->get();
         foreach ($emails as $email) {
             try {
@@ -47,11 +52,11 @@ class SendMail extends Command
                 $mailer->setReceiver($email->email, $email->email);
                 $mailer->send();
 
-                // $email->sended = 1;
-                // $email->save();
+                $email->sended = 1;
+                $email->save();
             } catch (Exception $e) {
-                // $email->sended = -1;
-                // $email->save();
+                $email->sended = -1;
+                $email->save();
             }
         }
 
