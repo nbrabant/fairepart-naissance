@@ -51,6 +51,7 @@
                 </tbody>
             </table>
 
+            {!! $emails->render() !!}
         @endif
 
     </div>
