@@ -194,14 +194,88 @@
 			</div>
 
 			<div id="last-scene"
-				data-0="display:none;bottom:-100%;"
+				data-0="display:none;bottom:-50%;"
 				data-{{ $finalScroll+700 }}="display:block;position:fixed;"
-				data-{{ $finalScroll+1500 }}="bottom:-50%;">
-				<div class="container">
-					<div class="col-xs-6 col-sm-3">test</div>
-					<div class="col-xs-6 col-sm-3">test</div>
-					<div class="col-xs-6 col-sm-3">test</div>
-					<div class="col-xs-6 col-sm-3">test</div>
+				data-{{ $finalScroll+1500 }}="bottom:0%;">
+				<div class="container text-center">
+					<div class="col-xs-6 col-sm-3">
+						<div class="last-scene-inner"
+							data-0="opacity:0;"
+							data-{{ $finalScroll+1500 }}="opacity:0;"
+							data-{{ $finalScroll+2000 }}="opacity:1;">
+							<div class="avatar">
+								<img src="img/avatars/nicolas.png" class="img-responsive"/>
+							</div>
+							<div class="prenom">Nicolas</div>
+							<div class="titre">Le papa</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="last-scene-inner"
+							data-0="opacity:0;"
+							data-{{ $finalScroll+2000 }}="opacity:0;"
+							data-{{ $finalScroll+2500 }}="opacity:1;">
+							<div class="avatar">
+								<img src="img/avatars/aurore.png" class="img-responsive"/>
+							</div>
+							<div class="prenom">Aurore</div>
+							<div class="titre">La maman</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="last-scene-inner"
+							data-0="opacity:0;"
+							data-{{ $finalScroll+2500 }}="opacity:0;"
+							data-{{ $finalScroll+3000 }}="opacity:1;">
+							<div class="avatar">
+
+							</div>
+							<div class="prenom">Pierre-André</div>
+							<div class="titre">Le parrain</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="last-scene-inner"
+							data-0="opacity:0;"
+							data-{{ $finalScroll+3000 }}="opacity:0;"
+							data-{{ $finalScroll+3500 }}="opacity:1;">
+							<div class="avatar">
+								<img src="img/avatars/amandine.png" class="img-responsive"/>
+							</div>
+							<div class="prenom">Amandine</div>
+							<div class="titre">La marraine</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="credits">
+					<div class="container text-center">
+						Propulsé par :
+						<a href="https://www.raspberrypi.org/" target="_blank">
+							<img src="img/credits/raspberry.png" class="img-responsive" />
+						</a>
+						<a href="https://github.com/" target="_blank">
+							<img src="img/credits/github.png" class="img-responsive" />
+						</a>
+						<a href="http://php.net/docs.php" target="_blank">
+							<img src="img/credits/php.png" class="img-responsive" />
+						</a>
+						<a href="https://getbootstrap.com/" target="_blank">
+							<img src="img/credits/bootstrap.png" class="img-responsive" />
+						</a>
+						<a href="https://atom.io/" target="_blank">
+							<img src="img/credits/atom.png" class="img-responsive" />
+						</a>
+						<a href="https://atom.io/" target="_blank">
+							<img src="img/credits/lumen.png" class="img-responsive" />
+						</a>
+						<a href="https://www.mysql.com/fr/" target="_blank">
+							<img src="img/credits/mysql.png" class="img-responsive" />
+						</a>
+						<a href="https://lumen.laravel.com/" target="_blank">
+							<img src="img/credits/lws.png" class="img-responsive" />
+						</a>
+					</div>
 				</div>
 			</div>
 
