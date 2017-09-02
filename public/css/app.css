@@ -134,6 +134,13 @@ body.pace-done #content {
     width: 30%;
     background: url("../img/baby.png") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);
 }
+#baby.baby-boy {
+    background: url("../img/baby-boy.png") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);
+}
+#baby.baby-girl {
+    background: url("../img/baby-girl.png") no-repeat scroll right center / 100% 100% rgba(0, 0, 0, 0);
+}
+
 #info-block {
     position: fixed;
     top: 5%;

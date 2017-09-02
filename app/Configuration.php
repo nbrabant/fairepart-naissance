@@ -35,7 +35,7 @@ class Configuration extends Model
         if ($this->key === 'maintenance') {
             return 'required|in:0,1';
         } elseif ($this->key === 'gender') {
-            return 'required|in:boy,girl';
+            return 'required|in:boy,girl,alien';
         }
 
         return 'required';

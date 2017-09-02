@@ -112,7 +112,7 @@
 				data-{{ $finalScroll+700 }}="bottom:0%"
 				data-{{ $finalScroll+1500 }}="bottom:50%;"></div>
 
-			<div id="baby"
+			<div id="baby" class="baby-{{ $datas['gender'] }}"
 				data-0="display:none;opacity:0;"
 				data-15000="display:block;opacity:0;"
 				data-16000="opacity:0.5;"
@@ -122,7 +122,13 @@
 				data-20000="opacity:1;"
 				data-{{ $finalScroll+700 }}="bottom:10%"
 				data-{{ $finalScroll+1500 }}="bottom:60%;"></div>
-			<div id="info-block" class="text-center" data-0="display:none;opacity:0;top:-50%;" data-19000="display:block;opacity:0;" data-20500="opacity:1;top:-50%;" data-22000="top:5%;" data-{{ $finalScroll }}="opacity:1" data-{{ $finalScroll+400 }}="opacity:0">
+			<div id="info-block" class="text-center"
+				data-0="display:none;opacity:0;top:-50%;"
+				data-19000="display:block;opacity:0;"
+				data-20500="opacity:1;top:-50%;"
+				data-22000="top:5%;"
+				data-{{ $finalScroll }}="opacity:1"
+				data-{{ $finalScroll+400 }}="opacity:0">
 				<div class="clearfix head-title">
 					@if ($datas['gender'] === 'boy')
 					    C'est un garçon !!!
