@@ -2,7 +2,13 @@
 
 @section('title')
 
-    <h1>Configuration de l'affichage</h1>
+    <div class="page_header clearfix">
+        <div class="pull-left">
+            <h1>Configuration de l'affichage</h1>
+        </div>
+        <div class="pull-right">
+        </div>
+    </div>
 
 @endsection
 

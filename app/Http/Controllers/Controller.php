@@ -18,17 +18,9 @@ class Controller extends BaseController
     protected $messages     = [];
     protected $attributes   = [];
 
-    protected $debugIP = [
-        '192.168.1.33',
-        '192.168.1.254',
-    ];
-
     public function getIndex(Request $request)
     {
-        \Log::info('IP : ' . $_SERVER['REMOTE_ADDR']);
-
-        if (Configuration::onMaintenanceMode() && $_SERVER['HTTP_HOST'] !== 'baby_parallax.dev' &&
-            strpos('192.168.1.', $_SERVER['REMOTE_ADDR']) === false) {
+        if (Configuration::onMaintenanceMode() && $_SERVER['HTTP_HOST'] !== 'baby_parallax.dev') {
             return view('landing');
         }
 
