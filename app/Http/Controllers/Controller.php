@@ -28,7 +28,7 @@ class Controller extends BaseController
         \Log::info('IP : ' . $_SERVER['REMOTE_ADDR']);
 
         if (Configuration::onMaintenanceMode() && $_SERVER['HTTP_HOST'] !== 'baby_parallax.dev' &&
-            !in_array($_SERVER['REMOTE_ADDR'], $this->debugIP)) {
+            strpos('192.168.1.', $_SERVER['REMOTE_ADDR']) === false) {
             return view('landing');
         }
 
