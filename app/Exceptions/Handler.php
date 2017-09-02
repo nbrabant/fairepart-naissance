@@ -7,6 +7,7 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -46,6 +47,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $e)
     {
         \Log::error($_SERVER['REMOTE_ADDR']);
+
         if ($e instanceof NotFoundHttpException) {
             return response(view('errors.401'), 404);
         }
