@@ -20,9 +20,9 @@ class Controller extends BaseController
 
     public function getIndex(Request $request)
     {
-        \Log::info('IP : ' . $_SERVER['HTTP_HOST']);
+        \Log::info('IP : ' . $_SERVER['REMOTE_ADDR']);
 
-        if (Configuration::onMaintenanceMode() && $_SERVER['HTTP_HOST'] !== 'baby_parallax.dev') {
+        if (Configuration::onMaintenanceMode() && !in_array($_SERVER['HTTP_HOST'], ['baby_parallax.dev'])) {
             return view('landing');
         }
 
