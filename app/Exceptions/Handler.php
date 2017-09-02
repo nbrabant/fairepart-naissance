@@ -45,6 +45,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
+        \Log::error($_SERVER['REMOTE_ADDR']);
+        if ($e instanceof NotFoundHttpException) {
+            return response(view('errors.401'), 404);
+        }
         return parent::render($request, $e);
     }
 }
