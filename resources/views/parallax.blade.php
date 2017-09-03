@@ -257,14 +257,14 @@
 				<div id="credits">
 					<div class="container text-center">
 						Propulsé par :
-						<a href="https://www.raspberrypi.org/" target="_blank">
-							<img src="img/credits/raspberry.png" class="img-responsive" />
-						</a>
-						<a href="https://github.com/" target="_blank">
-							<img src="img/credits/github.png" class="img-responsive" />
-						</a>
 						<a href="http://php.net/docs.php" target="_blank">
 							<img src="img/credits/php.png" class="img-responsive" />
+						</a>
+						<a href="https://www.mysql.com/fr/" target="_blank">
+							<img src="img/credits/mysql.png" class="img-responsive" />
+						</a>
+						<a href="https://lumen.laravel.com/" target="_blank">
+							<img src="img/credits/lumen.png" class="img-responsive" />
 						</a>
 						<a href="https://getbootstrap.com/" target="_blank">
 							<img src="img/credits/bootstrap.png" class="img-responsive" />
@@ -272,13 +272,13 @@
 						<a href="https://atom.io/" target="_blank">
 							<img src="img/credits/atom.png" class="img-responsive" />
 						</a>
-						<a href="https://atom.io/" target="_blank">
-							<img src="img/credits/lumen.png" class="img-responsive" />
+						<a href="https://github.com/" target="_blank">
+							<img src="img/credits/github.png" class="img-responsive" />
 						</a>
-						<a href="https://www.mysql.com/fr/" target="_blank">
-							<img src="img/credits/mysql.png" class="img-responsive" />
+						<a href="https://www.raspberrypi.org/" target="_blank">
+							<img src="img/credits/raspberry.png" class="img-responsive" />
 						</a>
-						<a href="https://lumen.laravel.com/" target="_blank">
+						<a href="https://www.lws.fr/" target="_blank">
 							<img src="img/credits/lws.png" class="img-responsive" />
 						</a>
 					</div>
