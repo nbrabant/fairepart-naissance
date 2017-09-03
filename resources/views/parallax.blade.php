@@ -158,39 +158,39 @@
 
 			<!-- Sections -->
 			<div class="countdowns">
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-200="display:block;" data-700="opacity:1;" data-900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-200="display:block;" data-700="opacity:1;" data-900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-200="opacity:0;" data-400="opacity:1;">9</span>
 					<span class="countdown-content" data-0="opacity:0;" data-400="opacity:0;" data-600="opacity:1;">mois d'impatience</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-1200="display:block;" data-1700="opacity:1;" data-1900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-1200="display:block;" data-1700="opacity:1;" data-1900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-1200="opacity:0;" data-1400="opacity:1;">8</span>
 					<span class="countdown-content" data-0="opacity:0;" data-1400="opacity:0;" data-1600="opacity:1;">kilos de fraises</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-2200="display:block;" data-2700="opacity:1;" data-2900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-2200="display:block;" data-2700="opacity:1;" data-2900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-2200="opacity:0;" data-2400="opacity:1;">7</span>
 					<span class="countdown-content" data-0="opacity:0;" data-2400="opacity:0;" data-2600="opacity:1;">siestes par semaines</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-3200="display:block;" data-3700="opacity:1;" data-3900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-3200="display:block;" data-3700="opacity:1;" data-3900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-3200="opacity:0;" data-3400="opacity:1;">6</span>
 					<span class="countdown-content" data-0="opacity:0;" data-3400="opacity:0;" data-3600="opacity:1;">SMS par heure</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-4200="display:block;" data-4700="opacity:1;" data-4900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-4200="display:block;" data-4700="opacity:1;" data-4900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-4200="opacity:0;" data-4400="opacity:1;">5</span>
 					<span class="countdown-content" data-0="opacity:0;" data-4400="opacity:0;" data-4600="opacity:1;">sens en effervescence</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-5200="display:block;" data-5700="opacity:1;" data-5900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-5200="display:block;" data-5700="opacity:1;" data-5900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-5200="opacity:0;" data-5400="opacity:1;">4</span>
 					<span class="countdown-content" data-0="opacity:0;" data-5400="opacity:0;" data-5600="opacity:1;">prénoms en balance</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-6200="display:block;" data-6700="opacity:1;" data-6900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-6200="display:block;" data-6700="opacity:1;" data-6900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-6200="opacity:0;" data-6400="opacity:1;">3</span>
 					<span class="countdown-content" data-0="opacity:0;" data-6400="opacity:0;" data-6600="opacity:1;">échographies</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-7200="display:block;" data-7700="opacity:1;" data-7900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-7200="display:block;" data-7700="opacity:1;" data-7900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-7200="opacity:0;" data-7400="opacity:1;">2</span>
 					<span class="countdown-content" data-0="opacity:0;" data-7400="opacity:0;" data-7600="opacity:1;">litres d'eau par jour</span>
 				</div>
-				<div class="countdown" style="position:fixed;" data-0="display:none;" data-8200="display:block;" data-8700="opacity:1;" data-8900="opacity:0;">
+				<div class="countdown" style="position:fixed;" data-0="display:none;" data-8200="display:block;" data-8700="opacity:1;" data-8900="display:none;opacity:0;">
 					<span class="countdown-header" data-0="opacity:0;" data-8200="opacity:0;" data-8400="opacity:1;">1</span>
 					<span class="countdown-content" data-0="opacity:0;" data-8400="opacity:0;" data-8600="opacity:1;">heureux événement</span>
 				</div>
