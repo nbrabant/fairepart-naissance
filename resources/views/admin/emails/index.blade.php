@@ -7,7 +7,7 @@
             <h1>Emails</h1>
         </div>
         <div class="pull-right">
-            <a href="{{ url('/admin/emails/create') }}" class="btn btn-sm btn-success">
+            <a href="{{ url('/saucisson/emails/create') }}" class="btn btn-sm btn-success">
 				<span class="glyphicon glyphicon-plus"></span> Ajouter un email
 			</a>
         </div>
@@ -42,7 +42,7 @@
                             <td>{{ $email->sended }}</td>
                             <td>{{ $email->readed }}</td>
                             <td>
-                                <a href="{{ url('/admin/emails/update/' . $email->id) }}" class="btn btn-sm btn-info">
+                                <a href="{{ url('/saucisson/emails/update/' . $email->id) }}" class="btn btn-sm btn-info">
                     				<span class="glyphicon glyphicon-plus"></span> Editer
                     			</a>
                             </td>

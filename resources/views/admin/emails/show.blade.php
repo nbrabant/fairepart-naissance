@@ -14,7 +14,7 @@
 
     <div class="page-content">
 
-        {!! Form::open(['url' => 'admin/emails/update/' . $email->id, 'class' => 'form-horizontal']) !!}
+        {!! Form::open(['url' => 'saucisson/emails/update/' . $email->id, 'class' => 'form-horizontal']) !!}
 
             <div class="form-group">
                 {!! Form::label('email', 'Adresse E-mail', array('class' => 'col-md-3 control-label')) !!}

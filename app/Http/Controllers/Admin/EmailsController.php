@@ -59,7 +59,7 @@ class EmailsController extends BaseController
 
         Email::create($attributes);
 
-        return redirect('admin/emails');
+        return redirect('saucisson/emails');
     }
 
     public function show(Request $request, $id = null)
@@ -92,7 +92,7 @@ class EmailsController extends BaseController
 
         $email->fill($attributes)->save();
 
-        return redirect('admin/emails');
+        return redirect('saucisson/emails');
     }
 
 }

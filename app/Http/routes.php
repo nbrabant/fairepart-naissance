@@ -14,7 +14,7 @@
 $app->get('/',              'Controller@getIndex');
 $app->post('/register',     'Controller@addEmail');
 
-$app->group(['prefix'=>'admin/', 'middleware' => 'BasicAuth', 'namespace' => 'App\Http\Controllers'], function($app) {
+$app->group(['prefix'=>'saucisson/', 'middleware' => 'BasicAuth', 'namespace' => 'App\Http\Controllers'], function($app) {
 
     $app->get('/',                      'AdminController@index');
     $app->get('/manage',                'AdminController@index');

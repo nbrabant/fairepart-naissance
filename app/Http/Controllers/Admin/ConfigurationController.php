@@ -9,7 +9,7 @@ use Laravel\Lumen\Routing\Controller as BaseController;
 
 class ConfigurationController extends BaseController
 {
-    
+
     public function show(Request $request)
     {
         $configurations = Configuration::all();
@@ -22,7 +22,7 @@ class ConfigurationController extends BaseController
         $validator = Validator::make($request->all(), Configuration::getValidators());
 
         if ($validator->fails()) {
-            return redirect('admin/configuration');
+            return redirect('saucisson/configuration');
         }
 
         $values = $request->only(array_keys(Configuration::getValidators()));
@@ -38,7 +38,7 @@ class ConfigurationController extends BaseController
             $configuration->save();
         }
 
-        return redirect('admin/configuration');
+        return redirect('saucisson/configuration');
     }
 
 }
