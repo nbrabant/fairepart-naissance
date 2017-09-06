@@ -234,7 +234,7 @@
 							data-{{ $finalScroll+2500 }}="opacity:0;"
 							data-{{ $finalScroll+3000 }}="opacity:1;">
 							<div class="avatar">
-
+								<img src="img/avatars/pierreandre.png" class="img-responsive"/>
 							</div>
 							<div class="prenom">Pierre-André</div>
 							<div class="titre">Le parrain</div>
