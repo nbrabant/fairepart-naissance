@@ -25,6 +25,6 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('mailing')
-            ->cron('*/30 * * * *');
+            ->cron('* */1 * * *');
     }
 }
