@@ -16,7 +16,7 @@
 
     <div class="page-content">
 
-        {!! Form::open(['url' => 'admin/configuration', 'class' => 'form-horizontal']) !!}
+        {!! Form::open(['url' => 'saucisson/configuration', 'class' => 'form-horizontal']) !!}
 
             @foreach ($configurations as $configuration)
 
