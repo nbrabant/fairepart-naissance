@@ -177,8 +177,8 @@ body.pace-done #content {
 }
 
 #last-scene .avatar {
-    height: 120px;
-    width: 120px;
+    height: 50%;
+    width: 50%;
     background-color: #000;
     border: solid 5px #fff;
     border-radius: 60px;
@@ -187,7 +187,7 @@ body.pace-done #content {
 }
 
 #last-scene .prenom {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 #last-scene .titre {
@@ -318,6 +318,17 @@ body.pace-done #content {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    #last-scene .avatar {
+        height: 120px;
+        width: 120px;
+    }
 
+    #last-scene .prenom {
+        font-size: 4rem;
+    }
+
+    #last-scene .titre {
+        font-size: 2.5rem;
+    }
 
 }
