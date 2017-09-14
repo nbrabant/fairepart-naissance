@@ -204,7 +204,7 @@
 				data-{{ $finalScroll+700 }}="display:block;position:fixed;"
 				data-{{ $finalScroll+1500 }}="bottom:0%;">
 				<div class="container text-center">
-					<div class="col-xs-6 col-sm-3">
+					<div class="col-xs-3">
 						<div class="last-scene-inner"
 							data-0="opacity:0;"
 							data-{{ $finalScroll+1500 }}="opacity:0;"
@@ -216,7 +216,7 @@
 							<div class="titre">Le papa</div>
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-3">
+					<div class="col-xs-3">
 						<div class="last-scene-inner"
 							data-0="opacity:0;"
 							data-{{ $finalScroll+2000 }}="opacity:0;"
@@ -228,7 +228,7 @@
 							<div class="titre">La maman</div>
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-3">
+					<div class="col-xs-3">
 						<div class="last-scene-inner"
 							data-0="opacity:0;"
 							data-{{ $finalScroll+2500 }}="opacity:0;"
@@ -240,7 +240,7 @@
 							<div class="titre">Le parrain</div>
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-3">
+					<div class="col-xs-3">
 						<div class="last-scene-inner"
 							data-0="opacity:0;"
 							data-{{ $finalScroll+3000 }}="opacity:0;"
@@ -254,7 +254,7 @@
 					</div>
 				</div>
 
-				<div id="credits">
+				<div id="credits" class="hidden-xs">
 					<div class="container text-center">
 						Propulsé par :
 						<a href="http://php.net/docs.php" target="_blank">
