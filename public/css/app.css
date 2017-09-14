@@ -177,11 +177,11 @@ body.pace-done #content {
 }
 
 #last-scene .avatar {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     background-color: #000;
     border: solid 5px #fff;
-    border-radius: 60px;
+    border-radius: 50%;
     margin: 0 auto 10px;
     overflow: hidden;
 }
