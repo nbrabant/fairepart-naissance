@@ -147,7 +147,7 @@
 					@endforeach
 				</div>
 				<div class="clearfix">
-					Je suis né le {{ $datas['date'] }} à {{ $datas['moment'] }}
+					Je suis {!! $datas['gender'] === 'boy' ? 'né' : 'née' !!} le {{ $datas['date'] }} à {{ $datas['moment'] }}
 				</div>
 				<div class="clearfix">
 					<div class="col-sm-12">
